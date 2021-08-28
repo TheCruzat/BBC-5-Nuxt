@@ -1,0 +1,155 @@
+#app.resume {
+
+  // it's gotta print yo
+  @page: 5.5in 8.5in;
+
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  text-align: justify;
+
+  .mo {
+    @media(min-width: 36rem) {
+      display: none;
+
+    }
+    border-top: 2px dotted var(--dim);
+    svg {
+      max-width: 300px;
+      margin: var(--gutter) auto 0;
+    }
+  }
+
+  header, section {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1, h2, h3 {
+      font-weight: 100;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-family: var(--title);
+      color: var(--hot);
+      margin: 0;
+      line-height: 1;
+
+      @include mFlip() {
+        font-size: 6vw;
+      }
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 1.2rem;
+      padding-left: 0;
+      margin-bottom: .2rem;
+      color: var(--con);
+
+      @include mFlip() {
+        font-size: 1.6rem;
+      }
+
+      &.dim {
+        color: #ccc;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  header {
+    border-bottom: 2px dotted var(--dim);
+    padding: var(--gutter) 0;
+
+    color: #ccc;
+
+    a {
+      color: #aaa;
+    }
+
+    >div {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      @media (max-width: 36rem) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      + div {
+        margin-top: calc(var(--gutter)/1.5);
+      }
+    }
+
+    svg {
+      display: inline-block;
+      height: auto;
+      width: 200px;
+
+      @include mFlip() {
+        width: 25vw;
+        max-width: 35%;
+      }
+      @media (max-width: 36rem) {
+        display: none;
+      }
+    }
+  }
+
+  section {
+
+    &.break {
+      break-before: always;
+    }
+    min-height: 0;
+    align-items: flex-start;
+    margin-top: 1rem;
+
+    line-height: 1.5;
+
+    + section {
+      margin-top: 2rem;
+    }
+
+    p + p {
+      margin-top: 0.6rem;
+    }
+  }
+}
+
+.expo-block {
+  padding: 0.7rem 0;
+  line-height: 1.2;
+
+  h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
+    color: var(--dim);
+
+    span {
+      color: #aaa;
+      font-weight: 100;
+    }
+  }
+  p, li {
+    font-size: 0.85rem;
+  }
+
+  & + & {
+    border-top: 1px dashed #ccc;
+  }
+}
+
+@media (print) {
+  h1, h2, h3 {
+    font-size: 12pt;
+  }
+}
