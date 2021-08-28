@@ -41,7 +41,7 @@
       </div>
       <div class="expo-block">
         <h3>ShirtSpace <span>: Senior Web Developer</span></h3>
-        <p>2021 : Slim, SCSS, JS/ES6, JQuery : CSS audit, optimization work, bugsmashing</p>
+        <p>2021 : Slim, SCSS, JS/ES6, JQuery : CSS audit, UI enhancements, UX reviews, optimization work, bugsmashing</p>
       </div>
       <div class="expo-block">
         <h3>BASIC <span>: Front End Developer</span></h3>
