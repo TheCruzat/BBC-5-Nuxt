@@ -101,7 +101,7 @@ export const GoodiesLinks = [
     {
         title: "Dan Cruzat's Resume",
         label: "resume",
-        url: "/Dan-Cruzat-resume-202021.pdf",
+        url: "/Dan-Cruzat-resume-2021.pdf",
         icon: "fa-file-text-o",
         mega: true,
     },
