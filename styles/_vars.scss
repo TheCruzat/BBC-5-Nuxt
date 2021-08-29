@@ -1,6 +1,3 @@
-@import url('//fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-@import url('//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 @mixin mFlip() {
   @media (min-width: 64rem) {
     @content;
