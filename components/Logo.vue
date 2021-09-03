@@ -1,7 +1,7 @@
 <template>
-  <svg :type="type" alt="Built by the Cruzat" xmlns="http://www.w3.org/2000/svg"
+  <svg :type="type" xmlns="http://www.w3.org/2000/svg"
        viewBox="0 0 900 157">
-    <path id="Selection"
+    <path
           fill="black" stroke="none" stroke-width="1"
           d="M 437.00,74.00
            C 430.97,67.27 424.39,55.23 420.25,47.00
