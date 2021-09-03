@@ -8,7 +8,7 @@
       </WildSet>
     </div>
 
-    <FinaleCTA subject="I want to talk about one of your builds" />
+    <FinaleCTA subject="I%20want%20to%20talk%20about%20one%20of%20your%20builds" />
 
   </section>
 </template>

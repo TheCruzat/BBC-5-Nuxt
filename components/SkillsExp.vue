@@ -15,7 +15,7 @@
       <ResBrands />
     </div>
 
-    <FinaleCTA subject="I want to talk to you about your experience" />
+    <FinaleCTA subject="I%20want%20to%20talk%20to%20you%20about%20your%20experience" />
   </section>
 </template>
 
