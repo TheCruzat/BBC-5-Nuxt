@@ -1,28 +1,41 @@
+const metaName = "Dan Cruzat",
+      metaFings = {
+        name: metaName,
+        url: "https://builtby.thecruzat.com",
+        title: "Built by the Cruzat : Web Portfolio of Dan Cruzat",
+        description: "Dan Cruzat is a front end engineer with over 20 years\' experience in digital, currently focused on React and Vue. Located in Portland OR.",
+        image: "https://builtby.thecruzat.com/builtbythecruzat.png",
+        twitter: "@_Cruzat",
+      };
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Built by the Cruzat : Web Portfolio of Dan Cruzat',
+    title: metaFings.title,
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
+      prefix: 'og: http://ogp.me/ns#'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Dan Cruzat is a front end engineer with over 20 years\' experience in digital, currently focused on React and Vue. Located in Portland OR.' },
+      { hid: 'description', name: 'description', content: metaFings.description },
       { name: 'keywords', content: 'front end, developer, engineer, wordpress, vue, react, html, css, javascript, portland, oregon' },
-      { name: 'author', content: 'Dan Cruzat' },
+      { name: 'author', content: metaName },
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:site', content: '@_cruzat' },
-      { name: 'twitter:creator', content: '@_cruzat' },
-      { name: 'twitter:title', content: 'Built by the Cruzat : Web Portfolio of Dan Cruzat' },
-      { name: 'twitter:description', content: 'Dan Cruzat is a front end engineer with over 20 years\' experience in digital, currently focused on React and Vue. Located in Portland OR.' },
-      { name: 'twitter:image', content: '/builtbycruzat.png' },
-      { property: 'og:title', content: 'Built by the Cruzat : Web Portfolio of Dan Cruzat' },
-      { property: 'og:description', content: 'Dan Cruzat is a front end engineer with over 20 years\' experience in digital, currently focused on React and Vue. Located in Portland OR.' },
-      { property: 'og:image', content: '/builtbycruzat.png' },
+      { name: 'twitter:site', content: metaFings.twitter },
+      { name: 'twitter:creator', content: metaFings.twitter },
+      { name: 'twitter:title', content: metaFings.title },
+      { name: 'twitter:description', content: metaFings.description },
+      { name: 'twitter:image', content: metaFings.image },
+      { property: 'og:url', content: metaFings.url },
+      { property: 'og:title', content: metaFings.title },
+      { property: 'og:site_name', content: metaFings.url },
+      { property: 'og:description', content: metaFings.description },
+      { property: 'og:image', content: metaFings.image },
       // { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
