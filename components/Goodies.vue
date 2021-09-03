@@ -2,7 +2,7 @@
   <div :type="type" class="goodies-set">
     <a v-for="link in links" :key="link.title" :href="link.url" :title="link.title" :data-mega="link.mega" target="_blank">
       <i :class="'fa '+link.icon" />
-      <label v-html="link.label"></label>
+      <span class="label" v-html="link.label"></span>
     </a>
   </div>
 </template>
@@ -95,7 +95,7 @@ export default {
       }
     }
 
-    label {
+    .label {
       font-size: 1.2rem;
       margin-left: 1rem;
       cursor: pointer;
