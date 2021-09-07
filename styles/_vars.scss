@@ -1,5 +1,5 @@
-@mixin mFlip() {
-  @media (min-width: 64rem) {
+@mixin mFlip($q: 64rem) {
+  @media (min-width: $q) {
     @content;
   }
 }
