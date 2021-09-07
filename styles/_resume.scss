@@ -121,16 +121,26 @@
     min-height: 0;
     align-items: flex-start;
     margin-top: 1rem;
-
     line-height: 1.5;
 
+    @include mFlip() {
+      line-height: 1.6;
+    }
+
     + section {
-      margin-top: 0.8rem;
+      margin-top: 1.5rem;
 
       @include mFlip() {
-        margin-top: 2rem;
+        margin-top: 2.4rem;
       }
     }
+
+    &.center {
+      &, h2 {
+        text-align: center;
+      }
+    }
+
     p {
       // font-size: 90%;
     }
@@ -153,13 +163,20 @@
     font-size: 1rem;
     color: var(--dim);
 
+    @include mFlip() {
+      font-size: 1.2rem;
+    }
+
     span {
       color: #aaa;
       font-weight: 100;
     }
   }
   p {
-    font-size: 80%; // 0.85rem;
+    font-size: 80%; //
+    @include mFlip() {
+      font-size: 0.9rem;
+    }
   }
 
   ul {
@@ -172,6 +189,10 @@
 
     @include mFlip(36rem) {
       columns: 2;
+    }
+
+    @include mFlip() {
+      font-size: 0.85rem;
     }
 
     li {
