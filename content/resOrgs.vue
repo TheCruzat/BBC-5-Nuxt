@@ -1,6 +1,6 @@
 <template>
   <div class="orgs">
-    <p>Emerge Interactive, ConnectiveDX, BASIC, EY Design Studio, Hanlon Brown, Razorfish, EOLA Amity Hills, Babcock & Jenkins, Aquent, Shirtspace, Webtrends, Opus Creative, The Brigade, Vitamin T, Mindjet, Periscope Creative and Polymer Studios</p>
+    <p>Emerge Interactive, Shirtspace, BASIC, Monumental, ConnectiveDX, creative FEW, EY Design Studio, EOLA Amity Hills, Aquent, Vitamin T, Babcock & Jenkins, Razorfish, Hanlon Brown, Webtrends, Opus Creative, The Brigade, Mindjet, Periscope Creative, Polymer Studios</p>
   </div>
 </template>
 
