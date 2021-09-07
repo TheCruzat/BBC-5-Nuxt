@@ -3,8 +3,13 @@ export const LinkSets = [
         header: "my other sites",
         links: [
             {
+                title: "ARX by P1RK5",
+                desc: "Vue/NuxtJS, SCSS, BandCamp",
+                url: "//arx.p1rk5.com",
+            },
+            {
                 title: "Cruzat.Media",
-                desc: "VueJS, SASS",
+                desc: "Vue/NuxtJS, SCSS",
                 url: "//cruzat.media",
             },
             {
@@ -12,19 +17,19 @@ export const LinkSets = [
                 desc: "NextJS, Styled Components",
                 url: "//thecruzat.com",
             },
-            {
+            /*{
                 title: "Ellsworth & Cruzat",
-                desc: "NextJS, SASS",
+                desc: "NextJS, SCSS",
                 url: "//eencee.me",
-            },
+            },*/
             {
                 title: "D/EC/AD/E",
-                desc: "AngularJS, SASS",
+                desc: "AngularJS, SCSS, BandCamp",
                 url: "//listento.thecruzat.com/decade",
             },
             {
                 title: "Coffee with the Cruzat",
-                desc: "WordPress, Gulp, SASS, JQuery",
+                desc: "WordPress, Gulp, SCSS, JQuery",
                 url: "//coffeewith.thecruzat.com",
             },
             {
