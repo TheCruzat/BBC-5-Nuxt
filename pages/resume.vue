@@ -8,9 +8,8 @@
       </div>
       <div>
         <p><a href="mailto:dan@thecruzat.com?subject=came across your resume...">dan@thecruzat</a> : <a href="tel:7739884797">773.988.4797</a></p>
-        <p><a href="//builtby.thecruzat.com" title="see the portfolio of Dan Cruzat " target="_blank">builtby</a> / <a href="//thecruzat.com" title="learn the arcanum of Dan Cruzat" target="_blank">thecruzat</a></p>
+        <p><a href="//builtby.thecruzat.com" title="see the portfolio of Dan Cruzat " target="_blank">portfolio</a> / <a href="//coffeewith.thecruzat.com" title="read the rantings of Dan Cruzat" target="_blank">blog</a> / <a href="//thecruzat.com" title="learn the arcanum of Dan Cruzat" target="_blank">about</a></p>
       </div>
-
     </header>
 
     <section>
