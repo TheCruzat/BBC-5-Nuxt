@@ -34,43 +34,12 @@
 
     <section class="break">
       <h2>projects & positions</h2>
-      <div class="expo-block">
-        <h3>Emerge Interactive <span>: Senior Front End Developer</span></h3>
-        <p>2021 : HTML, WordPress, SCSS : Lead dev on KIT build, support dev for WordPress niche layouts & widgets</p>
-      </div>
-      <div class="expo-block">
-        <h3>ShirtSpace <span>: Senior Web Developer</span></h3>
-        <p>2021 : Slim, SCSS, JS/ES6, JQuery : CSS audit, UI enhancements, UX reviews, optimization work, bugsmashing</p>
-      </div>
-      <div class="expo-block">
-        <h3>BASIC <span>: Front End Developer</span></h3>
-        <p>2020 : React (Next, Gatsby), StorybookJS, SCSS : Layout work, element library, QA/bugfixing</p>
-      </div>
-      <div class="expo-block">
-        <h3>Creative Few <span>: Lead Developer, Support Developer</span></h3>
-        <p>2017-2020 : React (Next, Gatsby), Angular, WordPress/PHP, SCSS, Custom HTML : Dev work, team support</p>
-      </div>
-      <!-- div class="expo-block">
-        <h3>E+C <span>: Strategist, Developer</span></h3>
-        <p>2013-2019 : React/Next, Vue/Nuxt, WordPress, Custom HTML : Co-conspirator, dev + research, client relations</p>
-      </div -->
-      <div class="expo-block">
-        <h3>Industrial Commercial Electric <span>: Lead Developer, UX Support</span></h3>
-        <p>2018-2019 @ E+C : WordPress custom build, Gulp/SASS : Dev work, flow polish, website makeover for direct client</p>
-      </div>
-      <div class="expo-block">
-        <h3>Modern Adventure <span>: WordPress Specialist, Team Support</span></h3>
-        <p>2018 : Two minisite custom builds, Trellis/Vagrant/SASS : Dev work and iterative refinement for direct client</p>
-      </div>
-      <div class="expo-block">
-        <h3>+Citizen (now EY) <span>: Support Developer, CSS Specialist, QA Testing</span></h3>
-        <p>2015-2017 : on team of 10~15 working on Enterprise customer portal, first as FED/CSS, later as QA tester / UI problemsolver</p>
-      </div>
+      <ResCredits />
     </section>
 
     <section>
       <h2 class="dim">ancient history & trivia</h2>
-      <p>PDX since 06 : 1st site fit in 640x480, 1999 : lifelong Doctor Who fan : maker of weirdo hip hop / electronic music since 199? : I annoy Sharkula : once pulled a caper with Pete Wentz & Jody Minnoch : once cursed out by Dan Aykroyd : will retire to be a dogwalker</p>
+      <p>PDX since 06 : lifelong Doctor Who fan : maker of weirdo hip hop / electro music since 199? : once pulled caper with Pete Wentz & Jody Minnoch : once cursed out by Dan Aykroyd</p>
     </section>
 
     <section class="mo">
@@ -85,6 +54,7 @@ import ResSummary from "@/content/resSummary";
 import ResSkills from "@/content/resSkills";
 import ResOrgs from "@/content/resOrgs";
 import ResBrands from "@/content/resBrands";
+import ResCredits from "@/content/resCredits";
 export default {
   name: 'Resume',
   head: {
@@ -95,7 +65,8 @@ export default {
     ResSummary,
     ResSkills,
     ResOrgs,
-    ResBrands
+    ResBrands,
+    ResCredits
   },
   data: function() {
     return {
