@@ -1,6 +1,6 @@
 <template>
   <div class="brands">
-    <p>PELICAN, Riot Games, ATT, Hanes, Sitepoint, KFC, MGM Studios, Intel, Nike, Sony, LinkedIn, Corelight, Coca Cola, Rose City Rollers, Microsoft, IBM, Audi, Best Buy, BikePunk, Providence Healthcare, Gildan, Toshiba, Adidas, VTech, Autodesk, Icon Tires, Qwest, Sterling Communications, Cascade Brewing, the Union Wine Company and Sock It to Me Socks</p>
+    <p>Adidas, ATT, Audi, Autodesk, Best Buy, BikePunk, Cascade Brewing, Coca Cola, Corelight, Gildan, Hanes, IBM, Icon Tires, Intel, KFC, LinkedIn, MGM Studios, Microsoft, Nike, PELICAN, Providence Healthcare, Qwest, Riot Games, Rose City Rollers, Sitepoint, Sock It To Me Socks, Sony, Sterling Communications, Toshiba, The Union Wine Company, VTech</p>
   </div>
 </template>
 
