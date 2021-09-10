@@ -47,7 +47,7 @@
 
     <section class="center">
       <h2 class="dim">ancient history & trivia</h2>
-      <p>PDX since 06 : lifelong Doctor Who fan : maker of weirdo hip hop / electro music since 199? : once pulled caper with Pete Wentz & Jody Minnoch : once cursed out by Dan Aykroyd</p>
+      <p class="small">PDX since 06 : lifelong Doctor Who fan : maker of weirdo hip hop / electro music since 199? : I annoy Sharkula : once pulled caper with Pete Wentz & Jody Minnoch : once cussed out by Dan Aykroyd</p>
     </section>
 
     <section class="mo">
