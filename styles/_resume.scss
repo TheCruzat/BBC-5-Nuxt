@@ -143,6 +143,10 @@
 
     p {
       // font-size: 90%;
+
+      &.small {
+        font-size: 90%;
+      }
     }
     p + p {
       margin-top: 0.6rem;
