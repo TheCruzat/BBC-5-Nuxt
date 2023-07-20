@@ -1,6 +1,8 @@
 <template>
-  <section :style="style">
+  <section :id="id" class="title-split" :style="style">
+    <span>{</span>
     <h2 v-if="msg" v-html="msg"></h2>
+    <span>}</span>
   </section>
 </template>
 
@@ -8,12 +10,13 @@
 export default {
   name: "Split",
   props: {
+    id: String,
     msg: String,
     img: String,
   },
   computed: {
     style () {
-      return 'background: url('+this.img+') 50% 80% no-repeat; background-size: cover;';
+      return 'background: url('+this.img+') 50% 80% no-repeat fixed; background-size: cover; @media (min-width: 40rem) { background-position: fixed; }';
     }
   },
 }
@@ -23,16 +26,25 @@ export default {
 
 @import "@/styles/global.scss";
 
-  section {
+  section.title-split {
     width: 100%; // 88vw; // calc(100% - 40px);
     // opacity: 0.8;
-    min-height: 50vh;
+    min-height: 160px; // 50vh;
     margin-left: auto;
     margin-right: auto;
 
-    margin: calc(8vh) auto 8vh;
+    margin: 100px 0 0;
     justify-content: flex-end;
     position: relative;
+
+    @include mFlip() {
+      width: 100%; // 88vw;
+      min-height: 30vh;
+      justify-content: center;
+
+      margin: 24vh auto 0; // 8vh;
+    }
+
     &:after {
       display: block;
       content: "";
@@ -54,12 +66,26 @@ export default {
       }
     }
 
-    @include mFlip() {
-      width: 88vw;
-      min-height: 30vh;
-      justify-content: center;
+    span {
+      color: rgba(255,255,255,0.5);
+      position: fixed;
+      top: calc(50% - 4.8vw); // calc(80px - 4.5vw); //
+      font-size: 8vw;
+      z-index: 1;
+      display: none;
 
-      margin: 24vh auto 0; // 8vh;
+      @include mFlip() {
+        display: block;
+      }
+
+      &:first-child {
+        left: 80px; //calc(50% - 480px);
+      }
+
+      &:last-child {
+        right: 80px; //calc(50% - 480px);
+      }
     }
+
   }
 </style>

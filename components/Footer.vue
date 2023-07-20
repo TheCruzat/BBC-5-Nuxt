@@ -3,7 +3,7 @@
     <Goodies :type="GoodieTypes.footer" />
     <Logo :type="LogoTypes.footer" />
     <div class="read"><h3>builtby the cruzat</h3>copyright &copy;2008-{{ yr }}<span> : </span><em><br></em>all rights reserved<span> : </span><em><br></em>please wash your hands</div>
-    <div :style="{background: 'url('+bg+') 50% 100% no-repeat scroll', backgroundSize: 'cover'}" />
+    <div :style="{background: 'url('+bg+') 50% 100% no-repeat fixed', backgroundSize: 'cover'}" />
   </footer>
 </template>
 
@@ -47,6 +47,7 @@ export default {
     align-items: center;
     justify-content: flex-end;
     overflow: hidden;
+    z-index: 3;
 
     h3 {
       color: var(--hot);

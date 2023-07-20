@@ -13,13 +13,37 @@ const credits = [
   },
   */
   {
+    company: "Daylight Studios",
+    position: "Senior Developer / UX Strategist",
+    time: "2021-",
+    tech: "WordPress, SCSS, GIT, Pantheon, GitLab, Bitbucket, ACF",
+    deets: [
+      "Resident duties incl maintenance & feature production",
+      "Managing multiple site instances through Pantheon",
+      "Regularly partner with 3rd party agencies on production",
+      "Team Coordination / Dev Lead / QA Support"
+    ]
+  },
+  {
+    company: "StudioLabs",
+    position: "Lead Developer / WordPress Specialist",
+    time: "2021-2022",
+    tech: "WordPress, SCSS, GIT, WP Engine, Bitbucket, ACF",
+    deets: [
+      "Update inherited themes with house standards",
+      "Implement new features / requests for overhaul relaunch",
+      "Problem-solve and patch legacy issues in themes",
+      "Team Support / QA Support / Remote Coordination"
+    ]
+  },
+  {
     company: "Emerge Interactive",
     position: "Lead Developer, Theme / UI Developer",
-    time: "2021",
+    time: "2021-2022",
     tech: "HTML, WordPress, SCSS, Docker, ACF",
     deets: [
       "Project lead on KIT build, layouts pre-theme",
-      "Layout development for custom post types and global frame",
+      "Layout dev for custom post types and global frame",
       "Team Support",
       "QA / bugfixing / browser testing",
     ]
@@ -30,7 +54,7 @@ const credits = [
     time: "2021",
     tech: "Slim, SCSS, JS/ES6, JQuery, Lighthouse",
     deets: [
-      "Audit global structure in testing for web core vitals optimization, esp CLS & LCP",
+      "Audit site for web core vitals optimization, esp CLS & LCP",
       "Custom UI enhancements using forward-facing ES6",
       "UX strategy, userflow and engagement",
       "QA / bugfixing / browser testing (incl IE legacy)",
@@ -60,7 +84,7 @@ const credits = [
       "QA / bugfixing"
     ]
   },
-  {
+  /*{
     company: "E+C",
     position: "Senior Developer, UX Strategist, Colleague",
     time: "2013-2020",
@@ -70,7 +94,7 @@ const credits = [
       "developed reuseable SPA's for small biz requirements",
       "engaged with agencies and PMs to assist with workload"
     ]
-  },
+  },*/
   {
     company: "Industrial Commercial Electric",
     position: "Lead Developer, UX Support",
@@ -95,7 +119,7 @@ const credits = [
       "bugfixes and UI assistance"
     ]
   },
-  {
+  /*{
     company: "+Citizen (now EY)",
     position: "Front End Developer, CSS Specialist, QA Testing",
     time: "2015-2017",
@@ -105,7 +129,7 @@ const credits = [
       "layout / interactive / component development",
       "QA Tester / UI problemsolver"
     ]
-  },
+  },*/
 ]
 
 export default credits;

@@ -42,21 +42,41 @@ export const LinkSets = [
     {
         header: "client work",
         links: [
+            // {
+            //     title: "Lea y Salvat",
+            //     desc: "ReactJS, SASS",
+            //     url: "//salvat.lea.dance",
+            // },
             {
-                title: "Lea y Salvat",
-                desc: "ReactJS, SASS",
-                url: "//salvat.lea.dance",
+                title: "Pacvue",
+                desc: "Webflow, Hubspot, Greenhouse",
+                url: "//pacvue.com"
+            },
+            {
+                title: "Miriam Lea Dance",
+                desc: "WordPress, Gulp, SASS, JS/JQ",
+                url: "//miriam.lea.dance"
+            },
+            {
+                title: "Rogue Waste",
+                desc: "Craft CMS, ReCollect, Gulp, SASS, JS/JQ",
+                url: "//roguewaste.com"
+            },
+            {
+                title: "D&O Garbage & Recycling",
+                desc: "WordPress, ReCollect, Gulp, SASS, JS/JQ",
+                url: "//dogarbage.com"
             },
             {
                 title: "Industrial Commercial Electric",
                 desc: "WordPress, Gulp, SASS, JQuery",
                 url: "//icecoelectric.com",
             },
-            {
-                title: "Modern Adventure Partner Portal",
-                desc: "WordPress, Trellis, SASS, JQuery",
-                url: "//modernadventure.com/1/batterytravel",
-            },
+            // {
+            //     title: "Modern Adventure Partner Portal",
+            //     desc: "WordPress, Trellis, SASS, JQuery",
+            //     url: "//modernadventure.com/1/batterytravel",
+            // },
             {
                 title: "Modern Adventure Magazine",
                 desc: "WordPress, Trellis, SASS, JQuery",
@@ -82,16 +102,21 @@ export const LinkSets = [
                 desc: "WordPress, LESS, JQuery",
                 url: "//synergywellness.org",
             },
-            {
-                title: "Jetty Fishery",
-                desc: "WordPress",
-                url: "//jettyfishery.com",
-            },
-            {
-                title: "Migration Media",
-                desc: "HTML, CSS",
-                url: "http://migrationmedia.com",
-            },
+            // {
+            //     title: "",
+            //     desc: "",
+            //     url: "",
+            // },
+            // {
+            //     title: "Jetty Fishery",
+            //     desc: "WordPress",
+            //     url: "//jettyfishery.com",
+            // },
+            // {
+            //     title: "Migration Media",
+            //     desc: "HTML, CSS",
+            //     url: "http://migrationmedia.com",
+            // }, https://www.arnoldgallagher.com/
         ]
     },
 ];
@@ -106,7 +131,7 @@ export const GoodiesLinks = [
     {
         title: "Dan Cruzat's Resume",
         label: "resume",
-        url: "/Dan-Cruzat-resume-2021.pdf",
+        url: "/Dan-Cruzat-resume-2023.pdf",
         icon: "fa-file-text-o",
         mega: true,
     },

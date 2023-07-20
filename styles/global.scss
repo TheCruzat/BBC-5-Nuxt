@@ -30,13 +30,23 @@ section, footer {
 }
 
 section {
-  min-height: 60vh;
+  // min-height: 60vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  position: relative;
+
+  .beacon {
+    display: block;
+    width: 20px;
+    height: 0px;
+    // background: red;
+    position: absolute;
+    top: -7.4vw;
+  }
 
   a {
     color: var(--hot);
@@ -74,6 +84,7 @@ section {
     // text-shadow: 0 1px 1px #fff;
     // border: 1px solid #fff;
     text-align: left;
+    z-index: 3;
 
     @include mFlip() {
       text-align: center;
@@ -132,9 +143,4 @@ section {
     background: #fff;
     color: var(--hot);
   }
-}
-
-.indent {
-  display: block;
-  padding: 0 1.4rem;
 }

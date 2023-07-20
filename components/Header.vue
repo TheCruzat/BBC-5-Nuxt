@@ -10,6 +10,7 @@
       <p>front end engineer <br>based in portland or</p>
     </div></div>
     <Button><i class="fa fa-chevron-down"></i></Button>
+    <div class="bottom-band"></div>
   </header>
 </template>
 
@@ -41,12 +42,14 @@ export default {
     justify-content: flex-start;
     align-items: center; // flex-start;
     flex-direction: column-reverse;
-    background: var(--paper); // #fff;
-    height: 90vh;
+    background: #fff; // var(--paper); // #fff;
+    height: auto;
     padding: 0; // 20px 0;
     position: relative;
-    margin-bottom: 10vh;
+    margin-bottom: 3rem;
+    z-index: 3;
     @include mFlip() {
+       height: 90vh;
       //overflow: visible;
       // flex-direction: column;
       // justify-content: space-between;
@@ -56,22 +59,30 @@ export default {
     margin: 0;
   }
   h1 {
-    position: relative;
+    position: absolute;
+    top: calc(50% - 2vw);
+    right: var(--gutter);
+    width: 40%;
     display: block;
-    width: 100%;
+
+    z-index: 1;
     @include mFlip() {
       margin-bottom: -0.8rem;
       width: auto;
+      position: relative;
+      top: auto; right: auto;
+      width: 100%;
     }
     span {
       display: none;
     }
     svg {
-      display: block;
+      display: none;
       height: auto;
       width: 100%;
       margin: 0 auto -0.9rem;
       @include mFlip() {
+        display: block;
         position: relative;
         transform: rotate(0);
         max-width: 100vw;
@@ -83,27 +94,61 @@ export default {
   }
   .tiptop {
     width: 100%;
+    position: relative;
+    background: #eee;
+
+    @include mFlip() {
+      margin-bottom: 8vh;
+      background: url('assets/fopo.jpg') 50% 50% / cover no-repeat fixed; //#000;
+
+      &:after {
+        display: block;
+        content: "";
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .bottom-band {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rem; // 5vh;
+    z-index: 0;
+    background: var(--paper); // #fff;
+    display: none;
+    @include mFlip() {
+      display: block;
+    }
   }
   .subset {
     width: 100%;
-    max-width: 45rem;
-    padding-left: var(--gutter);
+
+    padding: 0.8rem 0 1.4rem var(--gutter);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8vh;
     font-family: var(--title);
+      position: relative;
+      z-index: 2;
 
     @include mFlip() {
-      position: relative;
+      max-width: 45rem;
     }
   }
   p {
     text-transform: lowercase;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 0;
     padding: 0;
-    opacity: 0.4;
-    color: var(--bod);
+    // opacity: 0.7;
+    color: var(--dim); // #fff; // var(--bod);
     line-height: 1.2;
     align-self: flex-end;
     text-align: left;
@@ -122,7 +167,9 @@ export default {
       font-size: 3rem;
       color: var(--hot);
       @include mFlip() {
-        font-size: 4vw;
+        padding-top: 12vw;
+        font-size: 6vw;
+        color: #fff; //var(--hot);
       }
     }
   }
@@ -137,6 +184,10 @@ export default {
     color: var(--hot);
     animation: float 1s ease-out infinite;
     width: 120px;
+    display: none;
+    @include mFlip() {
+      display: block;
+    }
   }
   $chrv: 0.8rem;
   @keyframes float {

@@ -3,11 +3,13 @@
     <Header />
     <MissionPurp />
     <Goodies />
-    <Split msg="experience" :img="img[0]" />
+    <Split id="experience" msg="experience" :img="img[0]" />
     <SkillsExp />
-    <Split msg="in the wild" :img="img[1]" />
+    <Split id="my-work" msg="in the wild" :img="img[1]" />
     <Builds />
-    <Split msg="wanderings" :img="img[2]" />
+    <Split id="ramblings" msg="ramblings" :img="img[2]" />
+    <Blog />
+    <Split id="wanderings" msg="wanderings" :img="img[2]" />
     <Misc />
     <Footer />
     <Brackets />
@@ -25,6 +27,7 @@ import MissionPurp from "@/components/MissionPurp";
 import Misc from "@/components/Misc";
 import Split from "@/components/Split";
 import Brackets from "@/components/Brackets";
+import Blog from "@/components/Blog";
 
 import {SplitIMG} from "@/content/SplitIMG";
 
@@ -36,6 +39,7 @@ export default {
     Goodies,
     SkillsExp,
     Builds,
+    Blog,
     MissionPurp,
     Brackets,
     // Stories,
