@@ -39,4 +39,14 @@ $paper: #f0f0f0;
 
   --title: 'Khand', cursive;
   --subtitle: 'Khand', cursive;
+
+
+  --headerBGPos: 90% 50%;
+
+  @include mFlip(40rem) {
+    --headerBGPos: 60% 50%;
+  }
+  @include mFlip() {
+    --headerBGPos: 50% 50%;
+  }
 }

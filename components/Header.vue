@@ -44,7 +44,7 @@
 
     </div>
 
-    <Picture :img="img[0]" :noLazy="true" />
+    <Picture :img="img[0]" :noLazy="true" :imgStyle="{ objectPosition: 'var(--headerBGPos)' }" />
 
   </header>
 </template>
@@ -358,6 +358,7 @@ export default {
       width: 100%;
       background: transparent;
     }
+
     span {
       text-align: right;
       display: inline-block;
@@ -365,7 +366,6 @@ export default {
       color: #fff;
       position: relative;
       z-index: 1;
-      background: var(--con);
       font-family: var(--title);
       padding: 0 1rem;
       font-size: 1.2rem;
@@ -376,6 +376,7 @@ export default {
         font-size: 1.5rem;
         margin-left:auto;
         margin-right: auto;
+        background: var(--con);
       }
     }
     svg {
@@ -391,6 +392,10 @@ export default {
         width: 70vw;
         margin-top: 0;
         margin-bottom: -1.4rem;
+      }
+
+      @include mFlipUnder(40rem) {
+        margin-bottom: 0;
       }
     }
   }

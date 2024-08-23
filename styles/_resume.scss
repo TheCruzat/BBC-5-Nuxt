@@ -58,6 +58,7 @@ body {
       padding-left: 0;
       margin-bottom: .2rem;
       color: var(--con);
+      line-height: 1.4;
 
       @include mFlip() {
         font-size: 1.6rem;
