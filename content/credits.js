@@ -13,10 +13,34 @@ const credits = [
   },
   */
   {
+    company: "Centric Park",
+    position: "Senior Engineer / UX Strategist",
+    time: "2024-",
+    tech: "WordPress, SCSS, GIT, WPEngine, WordPress VIP, GitHub, Bitbucket, ACF",
+    deets: [
+      "Maintenance & feature production for retainer clients",
+      "Managing in-house Staging solutions at WPEngine",
+      "Block-based theme development in WordPress",
+      "Site performance and optimization tasks"
+    ]
+  },
+  {
+    company: "Unisyn Voting Systems",
+    position: "Senior Interactive Engineer / UX Strategist",
+    time: "2023-2024",
+    tech: "React, SCSS, GIT, GitLab, NPM",
+    deets: [
+      "Developed layouts for software products",
+      "Built UI component library for future products",
+      "Coordinated UX requirements with software engineers",
+      "Troubleshooting and triaging user flows"
+    ]
+  },
+  {
     company: "Daylight Studios",
-    position: "Senior Developer / UX Strategist",
-    time: "2021-",
-    tech: "WordPress, SCSS, GIT, Pantheon, GitLab, Bitbucket, ACF",
+    position: "Senior Interactive Engineer / UX Strategist",
+    time: "2021-2023",
+    tech: "WordPress, Craft, SCSS, GIT, Pantheon, GitLab, Bitbucket, ACF",
     deets: [
       "Resident duties incl maintenance & feature production",
       "Managing multiple site instances through Pantheon",
@@ -95,7 +119,7 @@ const credits = [
       "engaged with agencies and PMs to assist with workload"
     ]
   },*/
-  {
+  /*{
     company: "Industrial Commercial Electric",
     position: "Lead Developer, UX Support",
     time: "2018-2019",
@@ -119,7 +143,7 @@ const credits = [
       "bugfixes and UI assistance"
     ]
   },
-  /*{
+  {
     company: "+Citizen (now EY)",
     position: "Front End Developer, CSS Specialist, QA Testing",
     time: "2015-2017",

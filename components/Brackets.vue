@@ -1,7 +1,7 @@
 <template>
   <div class="brackets">
-    <strong>{</strong>
-    <strong>}</strong>
+    <strong>(</strong>
+    <strong>)</strong>
   </div>
 </template>
 
@@ -31,13 +31,13 @@ export default {
 
   strong {
     // font-size: 30rem;
-    font-size: 32vw;
+    font-size: 40vw;
     font-weight: 100;
-    margin-left: -3.2vw;
+    margin-left: -3.5vw;
 
     + strong {
       margin-left: 0;
-      margin-right: -3.2vw;
+      margin-right: -3.5vw;
     }
   }
 

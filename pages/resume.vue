@@ -8,8 +8,7 @@
       </div>
       <div>
         <p>
-          <a href="mailto:dan@thecruzat.com?subject=came across your resume...">dan@thecruzat</a> :
-          <a href="tel:7739884797">773.988.4797</a>
+          <a href="mailto:dan@thecruzat.com?subject=came across your resume...">dan@thecruzat</a>
         </p>
         <p>
           <a href="//builtby.thecruzat.com" title="see the portfolio of Dan Cruzat " target="_blank">portfolio</a> /

@@ -2,15 +2,28 @@
   <footer>
     <Goodies :type="GoodieTypes.footer" />
     <Logo :type="LogoTypes.footer" />
-    <div class="read"><h3>builtby the cruzat</h3>copyright &copy;2008-{{ yr }}<span> : </span><em><br></em>all rights reserved<span> : </span><em><br></em>please wash your hands</div>
-    <div :style="{background: 'url('+bg+') 50% 100% no-repeat fixed', backgroundSize: 'cover'}" />
+    <div class="read"><h3>builtby the cruzat v5.5</h3>copyright &copy;2008-{{ yr }}<span> : </span><em><br></em>all rights reserved<span> : </span><em><br></em>settle down</div>
+    <Picture :img="img" :imgStyle="{objectPosition: 'bottom', opacity: '0.75'}" />
   </footer>
 </template>
 
 <script>
 import Logo, {types as LogoTypes} from "@/components/Logo";
+import Picture from "@/components/Picture";
 import Goodies, {types as GoodieTypes} from "@/components/Goodies";
-import bg from '@/assets/bg-board.jpg';
+import bg from '@/assets/bg-board.webp';
+import bgM from '@/assets/bg-board-mobile.webp';
+
+const footImages = {
+  full: {
+    webp: bg,
+    jpg: bg,
+  },
+  mobile: {
+    webp: bgM,
+  }
+}
+
 const now = new Date();
 const yr = now.getFullYear();
 export default {
@@ -18,6 +31,7 @@ export default {
   components: {
     Logo,
     Goodies,
+    Picture,
   },
   props: {
     msg: String
@@ -27,7 +41,7 @@ export default {
       LogoTypes: LogoTypes,
       GoodieTypes: GoodieTypes,
       yr: yr,
-      bg: bg,
+      img: footImages,
     }
   }
 }
@@ -40,7 +54,7 @@ export default {
 
   footer {
     background: #000;
-    min-height: 90vh;
+    // min-height: 60vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -48,16 +62,21 @@ export default {
     justify-content: flex-end;
     overflow: hidden;
     z-index: 3;
+    text-align: center;
 
     h3 {
-      color: var(--hot);
+      color: #fff; // var(--con);
+      font-family: var(--title);
     }
 
     svg {
       margin-bottom: 8.4rem;
       align-self: flex-start;
+      max-width: 300px; /// 50vw;
+      @include mFlipUnder {
+        display: none;
+      }
       @include mFlip() {
-        max-width: 50vw;
         align-self: center;
         margin-bottom: 4.8rem;
         width: auto;
@@ -99,7 +118,7 @@ export default {
       // border-top: 1px solid #e0e0e0;
 
       +div {
-        opacity: 0.2;
+        opacity: 0.7;
         position: absolute;
         z-index: 0;
         top: 0; left: 0; right: 0; bottom: 0;

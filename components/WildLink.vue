@@ -24,27 +24,31 @@ export default {
   a.wildlink {
     color: var(--bod);
     text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    // width: auto;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // justify-content: flex-start;
     background: $paper;
-    border: 1px solid var(--paper);
-    padding: 4px;
-    text-align: center;
+    border: 2px solid var(--paper);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: left;
+    margin-right: var(--gutter);
 
-    width: 100%;
+    // width: 100%;
     margin-bottom: 1.8rem;
     transition: all 0.35s ease-in;
 
     @include mFlip() {
-      width: calc(50% - 0.9rem);
+      // width: calc(50% - 0.9rem);
     }
 
     &:hover {
       transition: all 0.15s ease-out;
-      background: lighten($paper, 4%);
-      border-color: darken($paper, 4%);
+      background: #fff; // lighten($paper, 4%);
+      border-color: var(--con);
 
       p:first-child {
         color: var(--hot);
@@ -57,21 +61,34 @@ export default {
 
     p {
       margin: 0;
-      display: inline-block;
-      width: auto;
+      // display: inline-block;
+      // width: auto;
       transition: all 0.2s;
 
 
       &:first-child {
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 0.2rem;
+        // border-bottom: 1px solid #ccc;
+        margin-bottom: 0.5rem;
+        position: relative;
+
+        &:after {
+          display: block;
+          content: "";
+          top: 100%;
+          left: 0; // calc(50% - 1.5rem); // 0.75rem;
+          right: 0.75rem;
+          background: #aaa;
+          height: 1px;
+          width: 3rem;
+          position: absolute;
+        }
       }
 
       + p {
         font-size: 60%;
         border: none;
-        opacity: 0.8;
-        color: #999;
+        // opacity: 0.8;
+        color: var(--con);
       }
     }
   }

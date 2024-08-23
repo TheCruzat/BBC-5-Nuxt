@@ -2,9 +2,9 @@
   <section class="mission-purpose">
     <div id="nutshell" class="beacon"></div>
 
-    <h2>I like to build</h2>
-
     <div class="flat">
+      <h2>I like to build</h2>
+
       <ResSummary />
     </div>
 

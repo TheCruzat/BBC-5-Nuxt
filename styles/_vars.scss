@@ -3,19 +3,29 @@
     @content;
   }
 }
+@mixin mFlipUnder($q: 64rem) {
+  @media (max-width: $q) {
+    @content;
+  }
+}
+@mixin mFlipBetween($q, $r) {
+  @media (min-width: $q) and (max-width: $r) {
+    @content;
+  }
+}
 
 .title {
-  font-family: 'Bree Serif', cursive;
+  font-family: 'Khand', cursive;
 }
 
 .subtitle {
-  font-family: 'Bree Serif', cursive;
+  font-family: 'Khand', cursive;
 }
 
-$bod:   #2c3e50;
-$hot:   #B846B8;
-$con:   #46B8B8;
-$dim:   #ff99ee;
+$bod:   #182825; // #3A1729; // #2c3e50;
+$hot:   #a724ed; // #C11EFC; // #B846B8;
+$con:   #016FB9; // #087E8B; // #313D5A; // #094074; // #46B8B8;
+$dim:   #70877F; // #ACADBC; // #ff99ee;
 $paper: #f0f0f0;
 
 :root {
@@ -27,6 +37,6 @@ $paper: #f0f0f0;
 
   --gutter: 20px;
 
-  --title: 'Bree Serif', cursive;
-  --subtitle: 'Bree Serif', cursive;
+  --title: 'Khand', cursive;
+  --subtitle: 'Khand', cursive;
 }

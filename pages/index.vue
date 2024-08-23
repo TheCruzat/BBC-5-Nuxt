@@ -3,13 +3,13 @@
     <Header />
     <MissionPurp />
     <Goodies />
-    <Split id="experience" msg="experience" :img="img[0]" />
+    <Split id="experience" msg="experience" :img="this.img[1]" />
     <SkillsExp />
-    <Split id="my-work" msg="in the wild" :img="img[1]" />
+    <Split id="work" msg="in the wild" :img="this.img[2]" />
     <Builds />
-    <Split id="ramblings" msg="ramblings" :img="img[2]" />
+    <Split id="ramblings" msg="ramblings" :img="this.img[3]" />
     <Blog />
-    <Split id="wanderings" msg="wanderings" :img="img[2]" />
+    <Split id="wanderings" msg="wanderings" :img="this.img[4]" />
     <Misc />
     <Footer />
     <Brackets />
@@ -29,7 +29,7 @@ import Split from "@/components/Split";
 import Brackets from "@/components/Brackets";
 import Blog from "@/components/Blog";
 
-import {SplitIMG} from "@/content/SplitIMG";
+import {ImageSets} from "@/content/SplitIMG";
 
 export default {
   name: 'App',
@@ -48,7 +48,7 @@ export default {
   },
   data:function() {
     return {
-      img: SplitIMG
+      img: ImageSets
     }
   },
   methods:function() {

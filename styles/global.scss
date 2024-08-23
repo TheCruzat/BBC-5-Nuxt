@@ -2,6 +2,8 @@
 
 html, body {
   margin: 0; padding: 0;
+  font-size: 16px;
+  font-display: swap;
 }
 
 a {
@@ -16,7 +18,7 @@ a {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left; // center;
   color: $bod; // #2c3e50;
   // margin-top: 60px;
 }
@@ -24,7 +26,7 @@ a {
 section, footer {
   margin-top: 2rem;
   @include mFlip() {
-    margin-top: 10vh;
+    margin-top: 6vh;
   }
 
 }
@@ -49,7 +51,16 @@ section {
   }
 
   a {
-    color: var(--hot);
+    color: var(--con);
+    background: var(--paper);
+    transition: all 0.35s ease-in;
+    border-bottom: 1px dotted var(--hot);
+
+    &:hover {
+      color: #fff;
+      background: var(--hot);
+      transition: all 0.15s ease-out;
+    }
   }
 
   h2 {
@@ -58,12 +69,12 @@ section {
 
     font-size: 2.55rem;
     margin: 0 0 1vh;
-    text-align: left;
     width: 100%;
-    padding: 0 var(--gutter);
+    // padding: 0 var(--gutter);
+    color: var(--con);
 
     @include mFlip() {
-      text-align: center;
+      // text-align: center;
       font-size: 4vw;
     }
   }
@@ -83,11 +94,11 @@ section {
     overflow: hidden;
     // text-shadow: 0 1px 1px #fff;
     // border: 1px solid #fff;
-    text-align: left;
+    // text-align: left;
     z-index: 3;
 
     @include mFlip() {
-      text-align: center;
+      // text-align: center;
       padding: 20px 32px;
     }
 
@@ -137,10 +148,24 @@ section {
   font-size: 1.2rem;
   border: 2px solid var(--hot);
   transition: all 0.35s ease-in;
+  border-radius: 0.5rem;
 
   &:hover {
     transition: all 0.15s ease-out;
     background: #fff;
     color: var(--hot);
+    border-color: var(--con);
   }
+}
+
+.font-small {
+  font-size: 85%;
+}
+.print-hide {
+  @media print {
+    display: none;
+  }
+}
+.small-bump {
+  margin-bottom: 1rem;
 }

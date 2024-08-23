@@ -1,6 +1,6 @@
 <template>
   <div :type="type" class="goodies-set">
-    <a v-for="link in links" :key="link.title" :href="link.url" :title="link.title" :data-mega="link.mega" target="_blank">
+    <a v-for="(link, ndx) in links" :key="link.title" :href="link.url" :title="link.title" :data-mega="link.mega" target="_blank" :class="{ 'sub': ndx > 3 }">
       <i :class="'fa '+link.icon" />
       <span class="label" v-html="link.label"></span>
     </a>
@@ -42,10 +42,10 @@ export default {
     width: 100%;
 
     @include mFlip() {
-      font-size: 2.4rem;
+      // font-size: 2.4rem;
       justify-content: space-around;
       padding-left: 0;
-      max-width: 720px;
+      max-width: 880px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -53,17 +53,27 @@ export default {
     &[type="footer"] {
       margin: 9vh auto 9vh;
       @include mFlip() {
-        margin-bottom: 12vh;
+        margin-bottom: 4vh;
       }
       a {
-        color: #fff;
-        background: #000;
-        opacity: 0.6;
-        border: 1px solid #222;
-        transition: all 0.2s;
+        color: var(--paper);
+        background: var(--bod);
+        opacity: 1; // 0.7;
+        border: 2px solid var(--bod);
+        // transition: all 0.2s;
+          .label, i {
+            color: rgba(255,255,255,0.75);
+            transition: color 0.35s ease-in;
+          }
         &:hover {
-          border-color: #2f2f2f;
-          opacity: 1;
+          border-color: var(--hot);
+          background: var(--hot);
+          // opacity: 1;
+          .label, i {
+            color: #fff;
+            transition: color 0.35s ease-out;
+          }
+
         }
       }
     }
@@ -77,6 +87,12 @@ export default {
     background: var(--paper);
     margin-bottom: var(--gutter);
     padding-left: var(--gutter);
+    border-radius: 0.5rem;
+    border: 2px solid var(--paper);
+
+    &.sub {
+      background: #fff;
+    }
 
     &[data-mega="true"] {
       @include mFlip() {
@@ -87,11 +103,12 @@ export default {
     }
 
     i {
-      width: 30px;
+      width: 20px;
       text-align: center;
+      font-size: 1.5rem;
 
       @include mFlip() {
-        width: 50px;
+        // width: 50px;
       }
     }
 
@@ -99,22 +116,27 @@ export default {
       font-size: 1.2rem;
       margin-left: 1rem;
       cursor: pointer;
+      font-weight: 600;
       @include mFlip() {
-        font-size: 1.6rem;
+        // font-size: 1.4rem;
       }
     }
 
     transition: all 0.35s ease-in;
     &:hover {
       transition: all 0.15s ease-out;
-      color: #fff; // var(--hot);
-      background: var(--hot);
+      color: var(--con);
+      background: #fff; // var(--hot);
+      border-color: var(--con);
+      .label, i {
+        color: var(--hot);
+      }
     }
     + a {
       // margin-top: 1rem;
     }
     @include mFlip() {
-      width: calc(33.333% - var(--gutter)); // 100%;
+      width: calc(25% - var(--gutter)); // 100%;
     }
   }
 </style>
