@@ -1,6 +1,6 @@
 <template>
   <div class="credits">
-      <div class="expo-block" v-for="(credit, index) in credits" :key="index">
+      <div class="expo-block" v-for="(credit, index) in credits" :key="index" :class="{ 'no-print': credit.noprint  }">
         <h3>{{credit.company}} <span>: {{credit.position}}</span></h3>
         <p>{{credit.time}} : {{credit.tech}}</p>
         <ul>

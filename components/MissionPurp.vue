@@ -1,6 +1,6 @@
 <template>
   <section class="mission-purpose">
-    <div id="nutshell" class="beacon"></div>
+    <div id="hello" class="beacon"></div>
 
     <div class="flat">
       <h2>I like to build</h2>

@@ -1,6 +1,6 @@
 <template>
   <div :type="type" class="goodies-set">
-    <a v-for="(link, ndx) in links" :key="link.title" :href="link.url" :title="link.title" :data-mega="link.mega" target="_blank" :class="{ 'sub': ndx > 3 }">
+    <a v-for="(link, ndx) in links" :key="link.title" :href="link.url" :title="link.title" :data-mega="link.mega" target="_blank" :class="{ 'sub': ndx > 2 }">
       <i :class="'fa '+link.icon" />
       <span class="label" v-html="link.label"></span>
     </a>
