@@ -22,10 +22,11 @@
   font-family: 'Khand', cursive;
 }
 
-$bod:   #182825; // #3A1729; // #2c3e50;
-$hot:   #a724ed; // #C11EFC; // #B846B8;
-$con:   #016FB9; // #087E8B; // #313D5A; // #094074; // #46B8B8;
-$dim:   #70877F; // #ACADBC; // #ff99ee;
+$bod:   #182825;
+$hot:   #a724ed;
+$con:   #016FB9;
+$dim:   #70877F;
+$lyt:   #CBD2D0;
 $paper: #f0f0f0;
 
 :root {
@@ -34,8 +35,10 @@ $paper: #f0f0f0;
   --dim: #{$dim};
   --con: #{$con};
   --paper: #{$paper};
+  --lyt: #{$lyt};
 
   --gutter: 20px;
+  --radius: 6px;
 
   --title: 'Khand', cursive;
   --subtitle: 'Khand', cursive;

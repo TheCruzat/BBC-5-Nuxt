@@ -4,6 +4,7 @@ html, body {
   margin: 0; padding: 0;
   font-size: 16px;
   font-display: swap;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -18,12 +19,11 @@ a {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: left; // center;
-  color: $bod; // #2c3e50;
-  // margin-top: 60px;
+  text-align: left;
+  color: $bod;
 }
 
-section, footer {
+section {
   margin-top: 2rem;
   @include mFlip() {
     margin-top: 6vh;
@@ -32,7 +32,6 @@ section, footer {
 }
 
 section {
-  // min-height: 60vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -41,13 +40,28 @@ section {
   flex-direction: column;
   position: relative;
 
-  .beacon {
-    display: block;
-    width: 20px;
-    height: 0px;
-    // background: red;
-    position: absolute;
-    top: -7.4vw;
+  &.row {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &.link-row {
+    a {
+      padding: 0.125rem 1.25rem;
+      border: 1px dashed var(--hot);
+      border-radius: 16px;
+
+      i {
+        display: inline-block;
+        margin: 0;
+        width: 20px;
+        text-align: center;
+        font-size: 66.6666%;
+      }
+    }
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
   }
 
   a {
@@ -66,15 +80,12 @@ section {
   h2 {
     font-family: var(--title);
     text-transform: lowercase;
-
     font-size: 2.55rem;
     margin: 0 0 1vh;
     width: 100%;
-    // padding: 0 var(--gutter);
     color: var(--con);
 
     @include mFlip() {
-      // text-align: center;
       font-size: 4vw;
     }
   }
@@ -82,6 +93,15 @@ section {
   h3 {
     font-family: var(--title);
     color: var(--con);
+    margin: 2rem 0;
+  }
+
+  p {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   .flat {
@@ -92,31 +112,22 @@ section {
     font-size: 1.4rem;
     position: relative;
     overflow: hidden;
-    // text-shadow: 0 1px 1px #fff;
-    // border: 1px solid #fff;
-    // text-align: left;
     z-index: 3;
 
     @include mFlip() {
-      // text-align: center;
       padding: 20px 32px;
     }
-
-    // box-shadow: inset 0 0 20px rgba(130, 130, 130, 0.4);
 
     &:before {
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
       display: block;
       content: "";
-      // background: var(--paper);
       opacity: 0.4;
       z-index: -1;
     }
 
     &:after {
-      // background: url("assets/paperbglined.png") 50% 50% no-repeat fixed; // rgba(255,255,255,0.9);
-      // background-size: cover;
       filter: blur(5px);
       -webkit-filter: blur(5px);
       position: absolute;
@@ -127,8 +138,6 @@ section {
     }
 
     + .flat {
-      // margin-top: 4vh
-      // margin-top: -1px;
       padding-top: 0;
     }
   }
@@ -168,4 +177,14 @@ section {
 }
 .small-bump {
   margin-bottom: 1rem;
+}
+
+.beacon {
+  position: absolute;
+  left: 0;
+  top: -64px;
+
+  @include mFlipUnder() {
+    top: -48px;
+  }
 }
