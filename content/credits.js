@@ -13,15 +13,39 @@ const credits = [
   },
   */
   {
+    company: "Futura Collective",
+    position: "Front End Developer",
+    time: "2025-current",
+    tech: "BigCommerce, Shopify, WordPress, Gutenberg / Blocks, SCSS, ACF",
+    deets: [
+      "In-house team dev for Procter & Gamble",
+      "Tagging Stencil templates for enterprise analytics in BC",
+      "Support, maintenance and upgrades for WordPress sites",
+      "On org-wide support team for web issues across ecosystem"
+    ]
+  },
+  {
+    company: "The Beauty Shop",
+    position: "Senior WordPress Engineer",
+    time: "2024-2025",
+    tech: "WordPress, WooCommerce, Elementor, Gutenberg / Native Blocks, SCSS, GIT, WPEngine, WordPress.org, GitHub, ACF",
+    deets: [
+      "Maintenance and upgrades for retainer clients",
+      "New feature development for inherited sites",
+      "CSS optimization & refactoring",
+      "Bespoke block dev in Gutenberg / Native and Elementor"
+    ]
+  },
+  {
     company: "Centric Park",
     position: "Senior Engineer / UX Strategist",
-    time: "2024-",
-    tech: "WordPress, SCSS, GIT, WPEngine, WordPress VIP, GitHub, Bitbucket, ACF",
+    time: "2024",
+    tech: "WordPress, React, SCSS, GIT, WPEngine, WordPress VIP, GitHub, Bitbucket, ACF",
     deets: [
-      "Maintenance & feature production for retainer clients",
-      "Managing in-house Staging solutions at WPEngine",
+      "Maintenance & new feature production for retainer clients",
       "Block-based theme development in WordPress",
-      "Site performance and optimization tasks"
+      "Retheme work and new component development in React",
+      "Site performance and optimization work"
     ]
   },
   {
@@ -82,7 +106,8 @@ const credits = [
       "Custom UI enhancements using forward-facing ES6",
       "UX strategy, userflow and engagement",
       "QA / bugfixing / browser testing (incl IE legacy)",
-    ]
+    ],
+    noprint: true
   },
   {
     company: "BASIC",
@@ -94,7 +119,8 @@ const credits = [
       "layout / interactive development for brand merch store",
       "element work for library",
       "QA / bugfixing"
-    ]
+    ],
+    noprint: true
   },
   {
     company: "creative FEW",
@@ -108,7 +134,7 @@ const credits = [
       "QA / bugfixing"
     ]
   },
-  /*{
+  {
     company: "E+C",
     position: "Senior Developer, UX Strategist, Colleague",
     time: "2013-2020",
@@ -117,9 +143,10 @@ const credits = [
       "worked with clients to define and develop solutions",
       "developed reuseable SPA's for small biz requirements",
       "engaged with agencies and PMs to assist with workload"
-    ]
-  },*/
-  /*{
+    ],
+    noprint: true
+  },/**/
+  {
     company: "Industrial Commercial Electric",
     position: "Lead Developer, UX Support",
     time: "2018-2019",
@@ -129,7 +156,8 @@ const credits = [
       "custom employee portal dev incl login logic",
       "custom timecard reporting system",
       "QA / bugfixing / browser testing"
-    ]
+    ],
+    noprint: true
   },
   {
     company: "Modern Adventure",
@@ -141,7 +169,8 @@ const credits = [
       "client portal minisite layout templates",
       "built blog/magazine layout templates",
       "bugfixes and UI assistance"
-    ]
+    ],
+    noprint: true
   },
   {
     company: "+Citizen (now EY)",
@@ -152,8 +181,9 @@ const credits = [
       "worked on team of 10-15 building enterprise customer portal",
       "layout / interactive / component development",
       "QA Tester / UI problemsolver"
-    ]
-  },*/
+    ],
+    noprint: true
+  },
 ]
 
 export default credits;

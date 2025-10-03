@@ -1,6 +1,6 @@
 <template>
   <div class="brands">
-    <p>Adidas, AT&T, Audi, Autodesk, Best Buy, BikePunk, Cascade Brewing, Coca Cola, Corelight, Gildan, IBM, Icon Tires, Intel, KFC, LinkedIn, Marchex, MGM Studios, Microsoft, Nike, Pacvue, PELICAN, Providence Healthcare, Qwest, Riot Games, Rose City Rollers, Sitepoint, Sock It To Me Socks, Sony, Sterling Communications, TrustEngine, The Union Wine Company, VTech</p>
+    <p>Adidas, AT&T, Audi, Autodesk, Best Buy, BikePunk, Cascade Brewing, Coca Cola, Comcast, Corelight, Gildan, IBM, Icon Tires, Intel, KFC, LinkedIn, Marchex, MGM Studios, Microsoft, NATIVE, Nike, Pacvue, Pampers, PELICAN, Providence Healthcare, Qwest, Riot Games, Rose City Rollers, Sitepoint, Sock It To Me Socks, Sony, Sterling Communications, Tide, TrustEngine, The Union Wine Company, VTech</p>
   </div>
 </template>
 
