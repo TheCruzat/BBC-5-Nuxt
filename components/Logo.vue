@@ -2658,6 +2658,7 @@
 export const types = {
   header: "header",
   footer: "footer",
+  social: "social",
 }
 
 export default {
@@ -2675,16 +2676,29 @@ export default {
   svg {
 
     &[type="header"] path {
-      fill: #fff; // var(--hot); // lighten($bod, 64%);
-      stroke: transparent; // #bbb; // var(--hot);
+      fill: #fff;
+      stroke: transparent;
 
       @include mFlip() {
         stroke: var(--con);
       }
     }
     &[type="footer"] path {
-      fill: var(--bod); // var(--hot); // rgba(255,255,255,0.275);
+      fill: var(--bod);
       stroke: var(--con);
+    }
+
+    &[type="social"] {
+      width: 1138px;
+      display: block;
+      margin-bottom: 1.5rem;
+
+      path {
+        fill: #fff;
+        stroke: #fff;
+        stroke-width: 0px;
+
+      }
     }
   }
 </style>

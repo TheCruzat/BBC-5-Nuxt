@@ -42,10 +42,10 @@ export default {
     width: 100%;
 
     @include mFlip() {
-      // font-size: 2.4rem;
       justify-content: space-around;
       padding-left: 0;
-      max-width: 880px;
+      padding-right: 0;
+      max-width: 660px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -58,22 +58,19 @@ export default {
       a {
         color: var(--paper);
         background: var(--bod);
-        opacity: 1; // 0.7;
-        border: 2px solid var(--bod);
-        // transition: all 0.2s;
-          .label, i {
-            color: rgba(255,255,255,0.75);
-            transition: color 0.35s ease-in;
-          }
+        opacity: 1;
+        border: none;
         &:hover {
           border-color: var(--hot);
           background: var(--hot);
-          // opacity: 1;
           .label, i {
             color: #fff;
             transition: color 0.35s ease-out;
           }
-
+        }
+        .label, i {
+          color: rgba(255,255,255,0.75);
+          transition: color 0.35s ease-in;
         }
       }
     }
@@ -81,7 +78,7 @@ export default {
   a {
     color: var(--bod);
     display: flex;
-    width: calc(50% - var(--gutter)/2); // 100%;
+    width: calc(50% - var(--gutter)/2);
     align-items: center;
     height: 4rem;
     background: var(--paper);
@@ -89,27 +86,26 @@ export default {
     padding-left: var(--gutter);
     border-radius: 0.5rem;
     border: 2px solid var(--paper);
+    transition: all 0.35s ease-in;
+
+    &:hover {
+      transition: all 0.15s ease-out;
+      color: #fff;
+      background: var(--hot);
+      border-color: var(--hot);
+    }
+    @include mFlip() {
+      width: calc(33.3333% - var(--gutter));
+    }
 
     &.sub {
       background: #fff;
     }
 
-    &[data-mega="true"] {
-      @include mFlip() {
-        // border: 1px solid #ccc;
-        // width: 50%;
-        // flex-basis: 2;
-      }
-    }
-
     i {
-      width: 20px;
+      width: 32px;
       text-align: center;
       font-size: 1.5rem;
-
-      @include mFlip() {
-        // width: 50px;
-      }
     }
 
     .label {
@@ -117,26 +113,6 @@ export default {
       margin-left: 1rem;
       cursor: pointer;
       font-weight: 600;
-      @include mFlip() {
-        // font-size: 1.4rem;
-      }
-    }
-
-    transition: all 0.35s ease-in;
-    &:hover {
-      transition: all 0.15s ease-out;
-      color: var(--con);
-      background: #fff; // var(--hot);
-      border-color: var(--con);
-      .label, i {
-        color: var(--hot);
-      }
-    }
-    + a {
-      // margin-top: 1rem;
-    }
-    @include mFlip() {
-      width: calc(25% - var(--gutter)); // 100%;
     }
   }
 </style>

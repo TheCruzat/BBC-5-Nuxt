@@ -1,9 +1,8 @@
 <template>
-  <section :id="id" class="title-split">
+  <section class="title-split">
+    <span :id="id" class="beacon" />
     <div class="flat">
-    <!-- <span>- - -</span> -->
     <h2 v-if="msg" v-html="msg"></h2>
-    <!-- <span>- - -</span> -->
     </div>
 
     <Picture :img="img" />
@@ -23,12 +22,6 @@ export default {
   components: {
     Picture
   },
-  // computed: {
-  //   style () {
-  //     // return 'background: url('+this.img[0]+') 25% 50% no-repeat fixed; background-size: cover; @media (min-width: 40rem) { background: url('+this.img[1]+') 50% 50% no-repeat fixed; background-size: cover; }';
-  //     return 'background: url('+this.img[1]+') 50% 50% no-repeat fixed; background-size: cover;';
-  //   }
-  // },
 }
 </script>
 
@@ -37,22 +30,19 @@ export default {
 @import "@/styles/global.scss";
 
   section.title-split {
-    width: 100%; // 88vw; // calc(100% - 40px);
-    // opacity: 0.8;
-    min-height: 260px; // 50vh;
+    width: 100%;
+    min-height: 190px;
     margin-left: auto;
     margin-right: auto;
-
     margin: 100px 0 0;
     justify-content: flex-end;
     position: relative;
 
     @include mFlip() {
-      width: 100%; // 88vw;
-      min-height: 18rem; // 20vw; // 30vh;
+      width: 100%;
+      min-height: 14rem;
       justify-content: center;
-
-      margin: 24vh auto 0; // 8vh;
+      margin: 24vh auto 0;
     }
 
     &:after {
@@ -75,14 +65,15 @@ export default {
         margin-bottom: 0;
       }
     }
+
     picture {
       z-index: 1;
     }
 
-    span {
+    span:not(.beacon) {
       color: rgba(255,255,255,0.5);
       position: fixed;
-      top: 2.3rem; // calc(50% - 4.8vw); // calc(80px - 4.5vw); //
+      top: 2.3rem;
       font-size: 8vw;
       z-index: 1;
       display: none;
@@ -92,13 +83,12 @@ export default {
       }
 
       &:first-child {
-        left: 80px; //calc(50% - 480px);
+        left: 80px;
       }
 
       &:last-child {
-        right: 80px; //calc(50% - 480px);
+        right: 80px;
       }
     }
-
   }
 </style>

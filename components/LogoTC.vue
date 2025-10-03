@@ -32,14 +32,4 @@ export default {
 
   @import "@/styles/global.scss";
 
-  /*svg {
-    &[type="header"] path {
-      fill: lighten($bod, 64%);
-      stroke: var(--hot);
-    }
-    &[type="footer"] path {
-      fill: rgba(255,255,255,1);
-      stroke: var(--hot);
-    }
-  }*/
 </style>

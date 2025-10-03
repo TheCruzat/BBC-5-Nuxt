@@ -54,7 +54,6 @@ export default {
 
   footer {
     background: #000;
-    // min-height: 60vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -65,14 +64,14 @@ export default {
     text-align: center;
 
     h3 {
-      color: #fff; // var(--con);
+      color: #fff;
       font-family: var(--title);
     }
 
     svg {
       margin-bottom: 8.4rem;
       align-self: flex-start;
-      max-width: 300px; /// 50vw;
+      max-width: 300px;
       @include mFlipUnder {
         display: none;
       }
@@ -111,19 +110,26 @@ export default {
     .read {
       padding: 20px;
       color: var(--paper);
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      // background: var(--paper);
-      //box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      // border-top: 1px solid #e0e0e0;
+
+      @include mFlip() {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+      }
+      @include mFlipUnder() {
+        width: 100%;
+        background: var(--bod);
+        padding-bottom: 32px;
+
+        h3 {
+          margin-top: 0;
+        }
+      }
 
       +div {
         opacity: 0.7;
         position: absolute;
         z-index: 0;
         top: 0; left: 0; right: 0; bottom: 0;
-        // background: url("https://miro.medium.com/max/6000/1*xBAAzp2dbEan-3sRgVT6yw.jpeg") center center no-repeat fixed;
-        // background-size: cover;
       }
     }
   }

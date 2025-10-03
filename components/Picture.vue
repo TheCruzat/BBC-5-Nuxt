@@ -22,7 +22,7 @@
 			imgStyle: Object,
 		},
 		mounted:function() {
-			// console.log(this.img.full.webp);
+			//
 		}
 	}
 </script>
@@ -30,19 +30,18 @@
 <style lang="scss" scoped>
 	picture {
 		display: block;
-		width: auto; // 100%;
-		height: auto; // 100%;
+		width: auto;
+		height: auto;
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		// right: var(--rails);
 		z-index: -1;
-		// overflow: hidden;
   		clip-path: inset(0);
 
 		img {
+			display: block;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;

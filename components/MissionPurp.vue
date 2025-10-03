@@ -24,16 +24,27 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
   @import "@/styles/global.scss";
   section {
-    margin-top: 28vw; // 4rem;
+    margin-top: 28vw;
 
     &.mission-purpose {
+      margin-top: 5rem;
+
+      .beacon {
+        top: -8rem;
+
+        @include mFlip() {
+            top: -8rem;
+        }
+
+      }
+
+
       @include mFlip() {
-        margin-top: 20vw;
+        margin-top: 12vw;
       }
     }
   }

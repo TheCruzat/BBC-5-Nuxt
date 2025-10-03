@@ -55,17 +55,18 @@ import Picture from "@/components/Picture";
 import { ImageSets } from "@/content/SplitIMG";
 import bgM from "@/assets/bg-fopo-mobile.webp";
 import bg from "@/assets/fopo.jpg";
+
+const headerTypes = {
+  social: "social",
+}
+
+
 export default {
   name: 'Header',
   components: {
     Logo,
     Picture
   },
-  // computed: {
-  //   style () {
-  //     return 'background: #fff url('+bgM+') 75% 50%  no-repeat fixed; background-size: cover; @media (min-width: 40rem) { background: #fff url('+bg+') 65% 50%  no-repeat fixed; background-size: cover; }';
-  //   }
-  // },
   data: function() {
     return {
       types: types,
@@ -76,12 +77,11 @@ export default {
     msg: String,
   },
   mounted:function() {
-    // console.log(this.img[0]);
+    //
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
   @import "@/styles/global.scss";
@@ -90,22 +90,24 @@ export default {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: column; // column-reverse;
+    flex-direction: column;
     justify-content: space-between;
-    // background: #fff; // var(--paper); // #fff;
-    height: 90vh; // auto;
-    padding: 0; // 20px 0;
+    height: calc(100vh - 4rem);
+    padding: 0;
     position: relative;
-    margin-bottom: 3rem;
-    z-index: 3;
-    // background: #fff url('assets/bg-fopo-mobile.jpg') 75% 50% / cover no-repeat fixed; //#000;
+    margin: 0 0 4rem;
+    z-index: 5;
     border-right: 1rem solid #fff;
     border-top: 1rem solid #fff;
+    border-bottom: 1rem solid #fff;
+    background: #8cd8fe;
+
     @include mFlip() {
 
        height: 100vh;
        background-position: 40% 50%;
        border: 1rem solid #fff;
+       margin: 0;
 
        &:after {
         display: block;
@@ -118,12 +120,6 @@ export default {
         left: 0;
         bottom: 0;
        }
-      //overflow: visible;
-      // flex-direction: column;
-      // justify-content: space-between;
-    }
-    @include mFlip(40rem) {
-      // background: #fff url('assets/fopo.jpg') 65% 50% / cover no-repeat fixed; //#000;
     }
 
     .sculpture-garden {
@@ -132,7 +128,7 @@ export default {
       }
       position: absolute;
       width: 48vw;
-      height: 5vw; // 90px;
+      height: 5vw;
       background: var(--con);
       left: calc(50% - 24vw);
       top: 4vw;
@@ -179,7 +175,7 @@ export default {
       > span {
         &:nth-child(1) {
           width: 20vw;
-          height: 5vw; // 50px;
+          height: 5vw;
           bottom: -2.0vw;
           left: -12vw;
 
@@ -197,7 +193,7 @@ export default {
 
         &:nth-child(2) {
           width: 20vw;
-          height: 5vw; // 50px;
+          height: 5vw;
           bottom: -2.0vw;
           right: -12vw;
 
@@ -215,7 +211,7 @@ export default {
         }
         &:nth-child(3) {
           width: 24vw;
-          height: 5vw; // 50px;
+          height: 5vw;
           top: -2.5vw;
           right: calc(50% - 12vw);
 
@@ -241,7 +237,7 @@ export default {
         }
         &:nth-child(4) {
           width: 16vw;
-          height: 5vw; // 50px;
+          height: 5vw;
           bottom: -3vw;
           right: calc(50% - 8vw);
 
@@ -314,24 +310,19 @@ export default {
     margin: 0;
   }
   h1 {
-    // position: absolute;
-    // top: calc(50% - 2vw);
-    // right: var(--gutter);
     padding: calc(#{var(--gutter)} / 2) var(--gutter);
-    width: calc(100% - 2rem); // 40%;
+    width: calc(100% - 2rem);
     max-width: 500px;
     display: flex;
     align-items: flex-start;
     flex-direction: column-reverse;
     background: var(--con);
-    margin-top: var(--gutter); // alc(#{var(--gutter)} / 2);
+    margin-top: var(--gutter);
     position: relative;
-
     z-index: 1;
 
     @include mFlipBetween(40rem, 64rem) {
 
-      // margin-top: 0;
       $htrisize: 114px;
 
       &:after {
@@ -370,7 +361,6 @@ export default {
       padding: 0 1rem;
       font-size: 1.2rem;
 
-      // display: none;
       @include mFlip() {
         width: auto;
         font-size: 1.5rem;
@@ -385,7 +375,6 @@ export default {
       width: 100%;
       margin: 0 auto -0.9rem;
       @include mFlip() {
-        // opacity: 0;//.5;
         position: relative;
         transform: rotate(0);
         max-width: 100vw;
@@ -405,21 +394,20 @@ export default {
     background: #fff;
     display: inline-block;
     width: auto;
+    margin-bottom: -1px;
 
     @include mFlip() {
       margin: 0 auto;
     }
 
     $tsize: 116px;
-    $hcorners: #fff; // var(--con)
+    $hcorners: #fff;
     &:after {
       display: block;
       content: "";
       position: absolute;
       bottom: 0;
-      right: -116px;
-
-
+      right: -115px;
       border-style: solid;
       border-width: 116px 0 0 116px;
       border-color: transparent transparent transparent $hcorners;
@@ -430,7 +418,6 @@ export default {
       }
 
       @include mFlip() {
-        // display: none;
         bottom: 2.5rem;
       }
     }
@@ -441,52 +428,23 @@ export default {
       position: absolute;
       bottom: 2.5rem;
       left: -116px;
-
       border-style: solid;
       border-width: 116px 116px 0 0;
       border-color: transparent $hcorners transparent transparent;
     }
-
-    @include mFlip() {
-      // margin-bottom: -5rem; // -3.75rem;
-      // background: url('assets/fopo.jpg') 50% 50% / cover no-repeat fixed; //#000;
-
-      /*&:after {
-        display: block;
-        content: "";
-        background: rgba(0,0,0,0.5);
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-      }*/
-    }
   }
-  /*.bottom-band {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 2rem; // 5vh;
-    z-index: 0;
-    background: var(--paper); // #fff;
-    display: none;
-    @include mFlip() {
-      display: block;
-    }
-  }*/
+
   .subset {
     width: 100%;
 
-    padding: 0.8rem var(--gutter) 0; // 1.4rem var(--gutter);
+    padding: 0.8rem var(--gutter) 0;
     margin-left: auto;
     margin-right: auto;
     font-family: var(--title);
     position: relative;
     z-index: 2;
+
+
 
     @include mFlip() {
       max-width: 45rem;
@@ -501,8 +459,7 @@ export default {
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
-    // opacity: 0.7;
-    color: var(--bod); // #fff; // var(--bod);
+    color: var(--bod);
     line-height: 1.2;
     align-self: flex-end;
     text-align: left;
@@ -522,39 +479,8 @@ export default {
       color: var(--hot);
       margin-bottom: 1px;
       @include mFlip() {
-        // padding-top: 12vw;
         font-size: 3.5rem;
-        // color: #fff; //var(--hot);
       }
-    }
-  }
-
-  button {
-    background: transparent;
-    border: none;
-    outline: none;
-    position: absolute;
-    left: calc(50% - 60px);
-    font-size: 2rem;
-    color: var(--hot);
-    animation: float 1s ease-out infinite;
-    width: 120px;
-    display: none;
-    @include mFlip() {
-      display: block;
-    }
-  }
-  $chrv: 0.8rem;
-  @keyframes float {
-    from {
-      bottom: -2.5vh;
-      opacity: 100;
-      font-size: $chrv;
-    }
-    to {
-      bottom: -7.5vh;
-      opacity: 0;
-      font-size: $chrv*4;
     }
   }
 </style>

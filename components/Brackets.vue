@@ -22,7 +22,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     z-index:-2;
-    color: var(--paper); // lighten($paper, 2%);
+    color: var(--paper);
 
     @include mFlip() {
       display: flex;
@@ -30,7 +30,6 @@ export default {
   }
 
   strong {
-    // font-size: 30rem;
     font-size: 40vw;
     font-weight: 100;
     margin-left: -3.5vw;
