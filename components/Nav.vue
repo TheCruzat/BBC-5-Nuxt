@@ -25,19 +25,6 @@ export default {
 			types: types,
 		}
 	}
-
-  // created () {
-  //   window.addEventListener('scroll', this.handleScroll);
-  // },
-  // unmounted () {
-  //   window.removeEventListener('scroll', this.handleScroll);
-  // },
-  // methods: {
-  //   handleScroll (event) {
-//
-  //     console.log(event);
-  //   }
-  // }
 }
 
 const linkS = [
@@ -60,16 +47,13 @@ const linkS = [
   }
 	nav {
 		position: sticky;
-		// text-align: center;
 		top: 0;
 		left:0;
 		right: 0;
 		width: 100%;
-		background: var(--paper); // #fff;
+		background: var(--paper);
 		z-index: 4;
 		padding: 0;
-
-		// border-bottom: 1px solid var(--paper);
 
 		@include mFlip() {
 			padding: 0.5rem 0;
@@ -83,13 +67,6 @@ const linkS = [
 			max-width: 64rem;
 			margin-left: auto;
 			margin-right: auto;
-			// padding-left: var(--gutter);
-			// padding-right: var(--gutter);
-
-			// @include mFlip() {
-			// 	padding-left: 32px;
-			// 	padding-right: 32px;
-			// }
 
 			@include mFlipUnder() {
 				align-items: flex-end;
@@ -104,6 +81,8 @@ const linkS = [
 			font-size: 1.5rem;
 			line-height: 2;
 			color: var(--con);
+			padding-left: var(--gutter);
+			padding-right: var(--gutter);
 
 			@include mFlipUnder() {
 				width: 100%;
@@ -113,9 +92,6 @@ const linkS = [
 				background: #fff;
 				padding-top: 0.25rem;
 			}
-
-			padding-left: var(--gutter);
-			padding-right: var(--gutter);
 
 			@include mFlip() {
 				padding-left: 32px;
