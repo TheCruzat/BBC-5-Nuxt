@@ -77,7 +77,7 @@ export default {
 
   googleFonts: {
     families: {
-      'Bree+Serif': true,
+      'Khand': true,
     },
     display: 'swap',
     prefetch: true,
