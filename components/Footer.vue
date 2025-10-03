@@ -2,7 +2,7 @@
   <footer>
     <Goodies :type="GoodieTypes.footer" />
     <Logo :type="LogoTypes.footer" />
-    <div class="read"><h3>builtby the cruzat v5.5</h3>copyright &copy;2008-{{ yr }}<span> : </span><em><br></em>all rights reserved<span> : </span><em><br></em>settle down</div>
+    <div class="read"><h3>built by the cruzat v5.7</h3>copyright &copy;2008-{{ yr }}<span> : </span><em><br></em>all rights reserved<span> : </span><em><br></em>settle down</div>
     <Picture :img="img" :imgStyle="{objectPosition: 'bottom', opacity: '0.75'}" />
   </footer>
 </template>

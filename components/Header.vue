@@ -1,19 +1,17 @@
 <template>
-  <header>
-    <h1><span>builtby the cruzat v5.5</span>
+  <header aria-label="built by the Cruzat: the online portfolio of Dan Cruzat, front end engineer based in Portland Oregon">
+    <h1 aria-hidden="true"><span>built by the cruzat v5.7</span>
 
       <Logo :type="types.header" />
 
     </h1>
-    <div class="tiptop">
+    <div aria-hidden="true" class="tiptop">
       <div class="subset">
       <p>the online portfolio of</p>
       <p class="name">Dan Cruzat</p>
       <p>front end engineer based in portland or</p>
-      <!-- <Button><i class="fa fa-chevron-down"></i></Button> -->
       </div>
     </div>
-    <!-- <div class="bottom-band"></div> -->
 
     <span class="header-corner"></span>
     <span class="header-corner"></span>
