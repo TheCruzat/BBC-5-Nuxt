@@ -58,6 +58,10 @@ section {
         text-align: center;
         font-size: 66.6666%;
       }
+
+      #app.resume & {
+        margin-bottom: 1rem;
+      }
     }
     a:not(:last-child) {
       margin-right: 1rem;

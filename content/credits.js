@@ -15,7 +15,7 @@ const credits = [
   {
     company: "Futura Collective",
     position: "Front End Developer",
-    time: "2025-current",
+    time: "2025",
     tech: "BigCommerce, Shopify, WordPress, Gutenberg / Blocks, SCSS, ACF",
     deets: [
       "In-house team dev for Procter & Gamble",
@@ -40,7 +40,7 @@ const credits = [
     company: "Centric Park",
     position: "Senior Engineer / UX Strategist",
     time: "2024",
-    tech: "WordPress, React, SCSS, GIT, WPEngine, WordPress VIP, GitHub, Bitbucket, ACF",
+    tech: "WordPress, React, Tailwind, SCSS, GIT, WPEngine, WordPress VIP, GitHub, Bitbucket, ACF",
     deets: [
       "Maintenance & new feature production for retainer clients",
       "Block-based theme development in WordPress",
@@ -52,7 +52,7 @@ const credits = [
     company: "Unisyn Voting Systems",
     position: "Senior Interactive Engineer / UX Strategist",
     time: "2023-2024",
-    tech: "React, SCSS, GIT, GitLab, NPM",
+    tech: "React, Tailwind, SCSS, GIT, GitLab, NPM",
     deets: [
       "Developed layouts for software products",
       "Built UI component library for future products",
@@ -64,7 +64,7 @@ const credits = [
     company: "Daylight Studios",
     position: "Senior Interactive Engineer / UX Strategist",
     time: "2021-2023",
-    tech: "WordPress, Craft, SCSS, GIT, Pantheon, GitLab, Bitbucket, ACF",
+    tech: "WordPress, Craft, Tailwind, SCSS, GIT, Pantheon, GitLab, Bitbucket, ACF",
     deets: [
       "Resident duties incl maintenance & feature production",
       "Managing multiple site instances through Pantheon",
