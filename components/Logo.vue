@@ -2684,7 +2684,7 @@ export default {
       }
     }
     &[type="footer"] path {
-      fill: var(--bod);
+      fill: var(--paper);
       stroke: var(--con);
     }
 

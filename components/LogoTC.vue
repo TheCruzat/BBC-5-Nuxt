@@ -32,4 +32,12 @@ export default {
 
   @import "@/styles/global.scss";
 
+  svg{
+    &[type="footer"] {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
 </style>
