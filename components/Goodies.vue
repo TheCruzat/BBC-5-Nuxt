@@ -1,6 +1,6 @@
 <template>
   <div :type="type" class="goodies-set">
-    <a v-for="(link, ndx) in links" :key="link.title" :href="link.url" :title="link.title" :data-mega="link.mega" target="_blank" :class="{ 'sub': ndx > 2 }">
+    <a v-for="(link, ndx) in links" :key="link.title" :href="link.url" :title="link.title" :data-mega="link.mega" target="_blank" :class="{ 'sub': ndx > topRow }">
       <i :class="'fa '+link.icon" />
       <span class="label" v-html="link.label"></span>
     </a>
@@ -15,6 +15,9 @@ export const types = {
   header: "header",
   footer: "footer",
 }
+
+function setRow(q) { return Math.ceil(q.length / 2) - 1; }
+
 export default {
   name: "Goodies",
   props: {
@@ -22,7 +25,8 @@ export default {
   },
   data: function() {
     return {
-      links: GoodiesLinks
+      links: GoodiesLinks,
+      topRow: setRow(GoodiesLinks)
     }
   }
 }
@@ -38,14 +42,15 @@ export default {
     flex-wrap: wrap;
     padding: var(--gutter);
     align-self: flex-start;
-    justify-content: space-between;
+    justify-content: center; // space-between;
     width: 100%;
+    gap: var(--gutter);
 
     @include mFlip() {
-      justify-content: space-around;
+      justify-content: center; // space-around;
       padding-left: 0;
       padding-right: 0;
-      max-width: 660px;
+      max-width: 800px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -59,10 +64,12 @@ export default {
         color: var(--paper);
         background: var(--bod);
         opacity: 1;
-        border: none;
+        border-color: var(--bod);
+        box-shadow: 0 0 0.125rem rgba(255,255,255,0.75);
         &:hover {
-          border-color: var(--hot);
+          border-color: rgba(0,0,0,0.1); // var(--bod); // var(--hot);
           background: var(--hot);
+          // box-shadow: 0 0 0.125rem rgba(0,0,0,0.75);
           .label, i {
             color: #fff;
             transition: color 0.35s ease-out;
@@ -82,7 +89,7 @@ export default {
     align-items: center;
     height: 4rem;
     background: var(--paper);
-    margin-bottom: var(--gutter);
+    // margin-bottom: var(--gutter);
     padding-left: var(--gutter);
     border-radius: 0.5rem;
     border: 2px solid var(--paper);
@@ -95,22 +102,26 @@ export default {
       border-color: var(--hot);
     }
     @include mFlip() {
-      width: calc(33.3333% - var(--gutter));
+      width: calc(25% - var(--gutter));
     }
 
     &.sub {
       background: #fff;
+
+      &:hover {
+        background: var(--hot);
+      }
     }
 
     i {
       width: 32px;
       text-align: center;
       font-size: 1.5rem;
+      margin-right: 0.75rem;
     }
 
     .label {
       font-size: 1.2rem;
-      margin-left: 1rem;
       cursor: pointer;
       font-weight: 600;
     }
