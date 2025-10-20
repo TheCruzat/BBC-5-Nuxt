@@ -1,8 +1,28 @@
+@media screen {
+  .know-rack {
+    @include mFlip() {
+      display: grid;
+      grid-template-columns: 200px auto;
 
-.indent {
-  display: block;
-  padding: 0 1.4rem;
+      #app.resume & {
+        grid-template-columns: 130px auto;
+      }
+    }
+    @include mFlipUnder() {
+      strong {
+        display: block;
+      }
+    }
+  }
 }
+
+@media print {
+  .know-rack {
+    display: grid;
+    grid-template-columns: 130px auto;
+  }
+}
+
 
 #app.resume {
 

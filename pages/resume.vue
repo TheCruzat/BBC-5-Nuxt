@@ -28,6 +28,8 @@
 
     <section>
       <h2>skills & experience</h2>
+      <p v-html="SkillsIntro"></p>
+      <hr />
       <ResSkills />
     </section>
 
@@ -69,11 +71,11 @@
 <script>
 import LogoTC, {types} from "@/components/LogoTC";
 import ResSummary from "@/content/resSummary";
-import ResSkills from "@/content/resSkills";
+import ResSkills, { SkillsIntro } from "@/content/resSkills";
 import ResOrgs from "@/content/resOrgs";
 import ResBrands from "@/content/resBrands";
 import ResCredits from "@/content/resCredits";
-import {contactEmail, portURL, liURL, rootURL, resumeFile} from "@/content/LinkSets";
+import {contactEmail, portURL, codeURL, liURL, rootURL, resumeFile} from "@/content/LinkSets";
 
 const resumeLinks = [
   {
@@ -97,6 +99,12 @@ const resumeNav = [
     href: portURL,
     ariaLabel: "Dan Cruzat's Portfolio",
     title: "see the portfolio of Dan Cruzat"
+  },
+  {
+    label: "code",
+    href: codeURL,
+    ariaLabel: "Dan Cruzat's Code Samples",
+    title: "see code samples from Dan Cruzat"
   },
   {
     label: "linkedin",
@@ -133,7 +141,8 @@ export default {
       liURL: liURL,
       resumeNav: resumeNav,
       resumeLinks: resumeLinks,
-      resumeFile: resumeFile
+      resumeFile: resumeFile,
+      SkillsIntro: SkillsIntro
     }
   }
 }

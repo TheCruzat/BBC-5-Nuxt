@@ -1,17 +1,18 @@
 <template>
   <div class="skills">
-    <p><strong>regulars</strong> [
-    <span class="indent">HTML, JS, CSS, PHP {
-      <span class="indent">Tailwind, SASS, ES6, WordPress [ACF, Blocks/Gutenberg, Elementor], WooCommerce, React, Vue, Twig (& Craft), Handlebars (& Stencil), JQuery</span></span>
-    <span class="indent">etc {
-      <span class="indent">GA4 Certified 2025, NPM, NVM, GIT, Valet, Composer, WP Engine, WordPress.com, BigCommerce, GitHub, GitLabs, Bitbucket, Trello, Browserstack</span></span>
-    </p>
-    <p><strong>occasionals</strong> [
-      <span class="indent">Shopify, Pantheon, Local, Docker, Statamic, Next, Nuxt, Typescript, Webflow, Slim, Gatsby, Bootstrap, Jira, Asana</span></p>
-    <p><strong>formers</strong> [
-      <span class="indent">ActionScript (AS2/AS3), Grunt, Gulp, Angular, CoffeeScript, Underscore, Foundation</span></p>
-    <p><strong>extras</strong> [
-      <span class="indent">Team Support, QA Support, Sound Design</span></p>
+
+    <p class="know-rack"><strong>languages :</strong> <span>HTML, JS, CSS, TS, SCSS, PHP</span></p>
+
+    <p class="know-rack"><strong>regulars :</strong> <span>Tailwind, ES6, npm, WordPress [ACF, Blocks/Gutenberg, Elementor], React, Vue, npm, NVM, GIT, Valet, Docker / Composer, WP Engine, WordPress.com, GitHub, Browserstack</span></p>
+
+    <p class="know-rack"><strong>recently :</strong> <span>Shopify, WooCommerce, BigCommerce, Handlebars (& Stencil), Twig (& Craft), GitLabs, Bitbucket, Trello</span></p>
+
+    <p class="know-rack"><strong>periodicals :</strong> <span>Pantheon, Local, Statamic, Next, Nuxt, Typescript, Webflow, Slim, Gatsby, Bootstrap, Jira, Asana, JQuery</span></p>
+
+    <p class="know-rack"><strong>formers :</strong> <span>ActionScript (AS2/AS3), Grunt, Gulp, Angular, CoffeeScript, Underscore, Foundation</span></p>
+
+    <p class="know-rack"><strong>extras :</strong> <span>Team Support, QA Support, Sound Design</span></p>
+
     <!--p><strong>RIP Flash</strong>, my ActionScript is now useless</p-->
   </div>
 </template>
@@ -20,6 +21,8 @@
   export default {
     name: "ResSkills"
   }
+
+  export const SkillsIntro = "I have worked in web design and development for over 20 years, building brochure sites for indie businesses, enterprise megasites, ui component libraries for software companies, wiki archive templates and landing pages for agency driven nurture campaigns.";
 </script>
 
 <style lang="scss">

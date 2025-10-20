@@ -1,5 +1,11 @@
 <template>
   <section>
+
+    <div class="flat">
+      <p v-html="SkillsIntro"></p>
+      <p>Full service / full stack for WordPress, solid UI / CSS resource for a React / Vue team.</p>
+    </div>
+
     <div class="flat">
       <h3>dialects + skills</h3>
       <ResSkills />
@@ -21,7 +27,7 @@
 
 <script>
 import FinaleCTA from "@/components/FinaleCTA";
-import ResSkills from "@/content/resSkills";
+import ResSkills, { SkillsIntro } from "@/content/resSkills";
 import ResOrgs from "@/content/resOrgs";
 import ResBrands from "@/content/resBrands";
 export default {
@@ -31,6 +37,11 @@ export default {
     ResSkills,
     ResOrgs,
     ResBrands
+  },
+  data() {
+    return {
+      SkillsIntro: SkillsIntro
+    }
   },
   props: {
     msg: String
