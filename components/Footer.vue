@@ -1,9 +1,9 @@
 <template>
   <footer>
     <Goodies :type="GoodieTypes.footer" />
-    <img class="cic" :src="cic" alt="" />
+    <div class="read"><img class="cic" :src="cic" alt="" />
     <LogoTC :type="LogoTypes.footer" />
-    <div class="read"><h3>built by the cruzat v5.7</h3>copyright &copy;2008-{{ yr }}<span> : </span><em><br></em>all rights reserved<span> : </span><em><br></em>settle down</div>
+    <h3>built by the cruzat v5.7</h3>copyright &copy;2008-{{ yr }}<span> : </span><em><br></em>all rights reserved<span> : </span><em><br></em>settle down</div>
     <Picture :img="img" :imgStyle="{objectPosition: 'bottom', opacity: '0.75'}" />
   </footer>
 </template>
@@ -72,35 +72,38 @@ export default {
     }
 
     img.cic {
+      display: block;
       max-width: 32px;
       border-radius: 50%;
       margin-bottom: 0.75rem;
+      margin-inline: auto;
     }
 
     svg {
-      margin-bottom: 8.4rem;
+      margin-bottom: 0;
       align-self: flex-start;
-      max-width: 210px;
+      max-width: 200px;
+      margin-inline: auto;
       @include mFlipUnder {
-        display: none;
+        //display: none;
       }
       @include mFlip() {
         align-self: center;
-        margin-bottom: 5.6rem;
+        margin-bottom: 0rem;
         width: auto;
       }
     }
 
-    @media (max-width: 64rem) {
-      text-align: left;
+    // @media (max-width: 64rem) {
+    //   text-align: left;
       span {
         display: none;
       }
-    }
+    // }
 
     @include mFlip() {
       br:not(.keep) {
-        display: none;
+        // display: none;
       }
     }
 
@@ -119,19 +122,20 @@ export default {
     .read {
       padding: 20px;
       color: var(--paper);
+      width: 100%;
+
+      h3 {
+        margin-top: 0;
+      }
 
       @include mFlip() {
-        position: absolute;
-        bottom: 0; left: 0; right: 0;
+        // position: absolute;
+        // bottom: 0; left: 0; right: 0;
       }
       @include mFlipUnder() {
-        width: 100%;
         background: var(--bod);
         padding-bottom: 32px;
 
-        h3 {
-          margin-top: 0;
-        }
       }
 
       +div {
