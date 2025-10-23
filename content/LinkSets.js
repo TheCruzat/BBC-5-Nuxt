@@ -114,11 +114,10 @@ export const LinkSets = [
 ];
 export const GoodiesLinks = [
   {
-    title: "More About Dan Cruzat",
-    label: "about",
-    url: rootURL,
-    icon: "fa-address-card",
-    mega: true,
+    title: "Review Dan Cruzat's Code",
+    label: "code",
+    url: codeURL,
+    icon: "fa-code",
   },
   {
     title: "Read Dan Cruzat's Blog",
@@ -127,10 +126,11 @@ export const GoodiesLinks = [
     icon: "fa-coffee",
   },
   {
-    title: "Review Dan Cruzat's Code",
-    label: "code",
-    url: codeURL,
-    icon: "fa-code",
+    title: "More About Dan Cruzat",
+    label: "about",
+    url: rootURL,
+    icon: "fa-address-card",
+    mega: true,
   },
   {
     title: "Email Dan Cruzat",

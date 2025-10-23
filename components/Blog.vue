@@ -103,6 +103,7 @@ export default {
   		&:hover {
   			background: #fff;
   			border-color: var(--con);
+  			border-left: 8px solid var(--con);
   		}
 
   		p {

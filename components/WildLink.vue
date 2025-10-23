@@ -44,6 +44,11 @@ export default {
         + p {
           color: var(--bod);
         }
+
+        &:after {
+          width: 100%;
+          transition: all 3s ease-out;
+        }
       }
     }
 
@@ -66,6 +71,8 @@ export default {
           height: 1px;
           width: 3rem;
           position: absolute;
+          transition: all 0.75s ease-out;
+
         }
       }
 
