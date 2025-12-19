@@ -1,5 +1,5 @@
 export const
-  resumeFile = '/Dan-Cruzat-resume-1025.pdf',
+  resumeFile = '/Dan-Cruzat-resume-1225.pdf',
   resumeURL = '/resume',
   rootURL = 'https://thecruzat.com',
   portURL = 'https://builtby.thecruzat.com',
