@@ -13,12 +13,12 @@ const credits = [
   },
   */
   {
-    company: "Futura Collective",
+    company: "Procter & Gamble",
     position: "Front End Developer",
     time: "2025",
     tech: "BigCommerce, Shopify, WordPress, Gutenberg / Blocks, SCSS, ACF",
     deets: [
-      "In-house team dev for Procter & Gamble",
+      "Team mentor & oversight for PHP and CSS",
       "Tagging Stencil templates for enterprise analytics in BC",
       "Support, maintenance and upgrades for WordPress sites",
       "On org-wide support team for web issues across ecosystem"
@@ -42,7 +42,7 @@ const credits = [
     time: "2024",
     tech: "WordPress, React, Tailwind, SCSS, GIT, WPEngine, WordPress VIP, GitHub, Bitbucket, ACF",
     deets: [
-      "Maintenance & new feature production for retainer clients",
+      "Repo owner for all projects, PR approval for junior contributors",
       "Block-based theme development in WordPress",
       "Retheme work and new component development in React",
       "Site performance and optimization work"
@@ -54,8 +54,8 @@ const credits = [
     time: "2023-2024",
     tech: "React, Tailwind, SCSS, GIT, GitLab, NPM",
     deets: [
-      "Developed layouts for software products",
-      "Built UI component library for future products",
+      "Owned CSS approvals, directed team members on standards",
+      "Built UI layers for current & future products",
       "Coordinated UX requirements with software engineers",
       "Troubleshooting and triaging user flows"
     ]
@@ -69,7 +69,7 @@ const credits = [
       "Resident duties incl maintenance & feature production",
       "Managing multiple site instances through Pantheon",
       "Regularly partner with 3rd party agencies on production",
-      "Team Coordination / Dev Lead / QA Support"
+      "Team Coordination / Dev Lead / Code Reviews / QA Support"
     ]
   },
   {
@@ -90,9 +90,9 @@ const credits = [
     time: "2021-2022",
     tech: "HTML, WordPress, SCSS, Docker, ACF",
     deets: [
-      "Project lead on KIT build, layouts pre-theme",
+      "Project lead, repo ownership, code reviews",
       "Layout dev for custom post types and global frame",
-      "Team Support",
+      "Team Support for UX and UI/CSS gremlins",
       "QA / bugfixing / browser testing",
     ]
   },
@@ -115,10 +115,10 @@ const credits = [
     time: "2020",
     tech: "React (Next, Gatsby), StorybookJS, SCSS",
     deets: [
-      "layout / interactive development for food delivery app",
-      "layout / interactive development for brand merch store",
-      "element work for library",
-      "QA / bugfixing"
+      "Layout / interactive dev for YUM! Brands delivery app",
+      "Layout / interactive dev for Riot Games merch store",
+      "Team development with peer review + approval",
+      "QA / bugfixing / team support for UI/CSS gremlins"
     ],
     noprint: true
   },
@@ -128,10 +128,10 @@ const credits = [
     time: "2017-2020",
     tech: "React (Next, Gatsby), Angular, WordPress, ACF, HTML, PHP, SCSS, Gulp, Docker",
     deets: [
-      "full stack dev in WordPress",
-      "layout / component / front end dev in React, Angular",
-      "static HTML development",
-      "QA / bugfixing"
+      "Team development, shared repos + code reviews",
+      "Full stack dev in WordPress",
+      "Layout / component / front end dev in React, Angular",
+      "QA / bugfixing / CSS oversight"
     ]
   },
   {
@@ -140,9 +140,10 @@ const credits = [
     time: "2013-2020",
     tech: "WordPress full stack, ACF, PHP, SCSS, Gulp, Docker",
     deets: [
-      "worked with clients to define and develop solutions",
-      "developed reuseable SPA's for small biz requirements",
-      "engaged with agencies and PMs to assist with workload"
+      "Worked with clients to define and develop solutions",
+      "Developed responsive toolkit used across several projects",
+      "Developed reuseable SPA's for small biz requirements",
+      "Engaged with agencies and PMs to assist with workload"
     ],
     noprint: true
   },/**/
@@ -152,9 +153,9 @@ const credits = [
     time: "2018-2019",
     tech: "WordPress full stack, PHP, ACF, SCSS, JQuery, Gulp",
     deets: [
-      "custom responsive theme dev w/ 7 layouts",
-      "custom employee portal dev incl login logic",
-      "custom timecard reporting system",
+      "Custom responsive theme dev w/ 7 layouts",
+      "Custom employee portal dev incl login logic",
+      "Custom timecard reporting system",
       "QA / bugfixing / browser testing"
     ],
     noprint: true
@@ -165,10 +166,10 @@ const credits = [
     time: "2018",
     tech: "Trellis, Vagrant, SASS, JQuery, PHP, CMB2",
     deets: [
-      "paired w/ inhouse dev to meet org needs",
-      "client portal minisite layout templates",
-      "built blog/magazine layout templates",
-      "bugfixes and UI assistance"
+      "Paired w/ inhouse dev to meet org needs",
+      "Client portal minisite layout templates",
+      "Built blog/magazine layout templates",
+      "Bugfixes and UI assistance"
     ],
     noprint: true
   },
@@ -178,8 +179,9 @@ const credits = [
     time: "2015-2017",
     tech: "AngularJS, SCSS",
     deets: [
-      "worked on team of 10-15 building enterprise customer portal",
-      "layout / interactive / component development",
+      "Worked on team of 10-15 building XFinity customer portal",
+      "Layout / interactive / component development",
+      "Team development, CSS ownership, code reviews",
       "QA Tester / UI problemsolver"
     ],
     noprint: true

@@ -104,11 +104,6 @@ export const LinkSets = [
         desc: "Vue/NuxtJS, SCSS, BandCamp",
         url: "//arx.p1rk5.com",
       },
-      {
-        title: "D/EC/AD/E",
-        desc: "AngularJS, SCSS, BandCamp",
-        url: "//listento.thecruzat.com/decade",
-      },
     ]
   },
 ];
