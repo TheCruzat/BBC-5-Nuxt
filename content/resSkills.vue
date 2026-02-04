@@ -3,13 +3,13 @@
 
     <p class="know-rack"><strong>languages :</strong> <span>HTML, JS, CSS, TS, SCSS, PHP</span></p>
 
-    <p class="know-rack"><strong>regular stack :</strong> <span>Tailwind, ES6, Node, WordPress, React, Vue, NVM, GIT, Valet, Docker</span></p>
+    <p class="know-rack"><strong>regular stack :</strong> <span>Tailwind, ES6, Node, WordPress, React, Vue, NVM, GIT, Valet, Local, Docker</span></p>
 
     <p class="know-rack"><strong>recently :</strong> <span>Shopify, WooCommerce, BigCommerce, Handlebars (& Stencil), Twig (& Craft), Notion, Jira, Trello</span></p>
 
     <p class="know-rack"><strong>soft skills :</strong> <span>Team Development & Dynamics, Code Reviews, Dev Leadership & Mentoring</span></p>
 
-    <p class="know-rack"><strong>periodicals :</strong> <span>Pantheon, Local, Statamic, Next, Nuxt, Typescript, Webflow, Slim, Gatsby, Bootstrap, Asana, JQuery</span></p>
+    <p class="know-rack"><strong>periodicals :</strong> <span>Pantheon, Statamic, Next, Nuxt, Webflow, Slim, Gatsby, Bootstrap, Asana, JQuery</span></p>
 
     <p class="know-rack"><strong>formers :</strong> <span>ActionScript (AS2/AS3), Grunt, Gulp, Angular, CoffeeScript, Underscore, Foundation</span></p>
 

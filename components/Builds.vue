@@ -4,7 +4,7 @@
     <div v-for="set in links" :key="set.header" class="flat">
       <h3>{{ set.header }}</h3>
       <WildSet>
-        <WildLink v-for="link in set.links" :key="link.title" :title="link.title" :desc="link.desc" :url="link.url"  />
+        <WildLink v-for="link in set.links" :key="link.title" :title="link.title" :desc="link.desc" :url="link.url" :year="link.year"  />
       </WildSet>
     </div>
 

@@ -1,6 +1,6 @@
 <template>
   <header aria-label="built by the Cruzat: the online portfolio of Dan Cruzat, front end engineer based in Portland Oregon">
-    <h1 aria-hidden="true"><span>built by the cruzat v5.7</span>
+    <h1 aria-hidden="true"><span>built by the cruzat v{{ pv }}</span>
 
       <Logo :type="types.header" />
 
@@ -53,6 +53,7 @@ import Picture from "@/components/Picture";
 import { ImageSets } from "@/content/SplitIMG";
 import bgM from "@/assets/bg-fopo-mobile.webp";
 import bg from "@/assets/fopo.jpg";
+import { portVersion } from "@/content/LinkSets";
 
 const headerTypes = {
   social: "social",
@@ -69,6 +70,7 @@ export default {
     return {
       types: types,
       img: ImageSets,
+      pv: portVersion
     }
   },
   props: {

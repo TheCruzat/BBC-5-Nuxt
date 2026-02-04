@@ -5,7 +5,8 @@
     <ul>
       <li v-for="link in resumeLinks">
         <a
-          :href="link.href">
+          :href="link.href"
+          :target="link.new ? '_blank' : null">
           <i :class="`fa ${link.icon}`"></i>
           <span v-html="link.label"></span>
         </a>
@@ -31,7 +32,8 @@
       {
         href: resumeFile,
         label: resumeFileLabel,
-        icon: 'fa-floppy-o'
+        icon: 'fa-floppy-o',
+        new: true
       }
     ];
   export default {

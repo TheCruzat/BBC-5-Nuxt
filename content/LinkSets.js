@@ -1,5 +1,5 @@
 export const
-  resumeFile = '/Dan-Cruzat-resume-1225.pdf',
+  resumeFile = '/Dan-Cruzat-resume-0226.pdf',
   resumeURL = '/resume',
   rootURL = 'https://thecruzat.com',
   portURL = 'https://builtby.thecruzat.com',
@@ -8,7 +8,8 @@ export const
   liURL = 'https://www.linkedin.com/in/dancruzat/',
   ghURL = 'https://github.com/thecruzat',
   cpURL = 'https://codepen.io/DanCruzat',
-  contactEmail = 'thecruzat@gmail.com';
+  contactEmail = 'thecruzat@gmail.com',
+  portVersion = '5.75';
 
 export const LinkSets = [
   {
@@ -19,70 +20,95 @@ export const LinkSets = [
       //     desc: "",
       //     url: "",
       // },
+      // {
+      //     title: "Faber & Trause",
+      //     desc: "WordPress, Kubio, ES6",
+      //     url: "#",
+      //     year: "2026",
+      // },
+      {
+          title: "GoTango",
+          desc: "WordPress, Tailwind, ES6",
+          url: "//tango.dance",
+          year: "2026",
+      },
       {
         title: "Cole Parker Randall Foundation",
         desc: "WordPress, Tailwind, ES6",
-        url: "//smilesforsma.org"
+        url: "//smilesforsma.org",
+        year: "2025",
       },
       {
         title: "Miriam Ziven",
         desc: "WordPress, Tailwind, ES6",
         url: "//miriamziven.com",
+        year: "2025",
       },
       {
         title: "BeLearning Center",
         desc: "WordPress, npm, SASS, ES6",
         url: "//belearning.center",
+        year: "2025",
       },
       {
         title: "Ells.Work",
         desc: "Craft CMS, Gulp, SASS, ES6",
         url: "//ells.work",
+        year: "2024",
       },
       {
         title: "MIT School of Humanities, Arts and Social Sciences",
         desc: "WordPress, API, Gulp, SASS, ES6",
         url: "//shass.mit.edu",
+        year: "2024",
       },
       {
         title: "MIT Institutional Research",
         desc: "WordPress, Gulp, SASS, ES6",
         url: "//ir.mit.edu",
+        year: "2024",
       },
       {
         title: "Rogue Waste",
         desc: "Craft CMS, ReCollect, Gulp, SASS, JS/JQ",
-        url: "//roguewaste.com"
+        url: "//roguewaste.com",
+        year: "2023",
       },
       {
         title: "D&O Garbage & Recycling",
         desc: "WordPress, ReCollect, Gulp, SASS, JS/JQ",
-        url: "//dogarbage.com"
+        url: "//dogarbage.com",
+        year: "2023",
       },
       {
         title: "Miriam Lea Dance",
         desc: "WordPress, Gulp, SASS, JS/JQ",
-        url: "//miriam.lea.dance"
+        url: "//miriam.lea.dance",
+        year: "2022",
       },
       {
         title: "Industrial Commercial Electric",
         desc: "WordPress, Gulp, SASS, JQuery",
         url: "//icecoelectric.com",
+        year: "2019",
       },
       {
         title: "Modern Adventure Magazine",
         desc: "WordPress, Trellis, SASS, JQuery",
         url: "//modernadventure.com/magazine",
+        year: "2018",
       },
       {
         title: "Lisa the Doula",
         desc: "WordPress, Gulp, SASS",
         url: "//www.lisadoula.com",
+        year: "2015",
       },
       {
         title: "Synergy Wellness",
         desc: "WordPress, LESS, JQuery",
         url: "//synergywellness.org",
+        year: "2015",
       },
     ]
   },

@@ -3,7 +3,7 @@
     <Goodies :type="GoodieTypes.footer" />
     <div class="read"><img class="cic" :src="cic" alt="" />
     <LogoTC :type="LogoTypes.footer" />
-    <h3>built by the cruzat v5.7</h3>copyright &copy;2008-{{ yr }}<span> : </span><em><br></em>all rights reserved<span> : </span><em><br></em>settle down</div>
+    <h3>built by the cruzat v{{ pv }}</h3>copyright &copy;2008-{{ yr }}<span> : </span><em><br></em>all rights reserved<span> : </span><em><br></em>settle down</div>
     <Picture :img="img" :imgStyle="{objectPosition: 'bottom', opacity: '0.75'}" />
   </footer>
 </template>
@@ -15,6 +15,7 @@ import Goodies, {types as GoodieTypes} from "@/components/Goodies";
 import bg from '@/assets/bg-board.webp';
 import bgM from '@/assets/bg-board-mobile.webp';
 import cic from '@/assets/chicago-in-cascadia.png';
+import {portVersion} from "@/content/LinkSets";
 
 const footImages = {
   full: {
@@ -44,7 +45,8 @@ export default {
       GoodieTypes: GoodieTypes,
       yr: yr,
       img: footImages,
-      cic: cic
+      cic: cic,
+      pv: portVersion
     }
   }
 }

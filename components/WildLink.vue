@@ -1,7 +1,7 @@
 <template>
   <a class="wildlink" :href="url" :title="title" target="_blank">
     <p>{{ title }}</p>
-    <p>{{ desc }}</p>
+    <p>{{ year }} : {{ desc }}</p>
   </a>
 </template>
 
@@ -11,7 +11,8 @@ export default {
   props: {
     title: String,
     url: String,
-    desc: String
+    desc: String,
+    year: String,
   }
 }
 </script>
